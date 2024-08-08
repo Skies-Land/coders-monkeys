@@ -21,7 +21,7 @@ export const Typography = ({
     
 let variantStyle: string = "", colorStyle: string = "";
 
-    // Styles de variante de texte
+    // Détermine la taille du texte de la tipographie
     switch (variant) {
         case "display":
             variantStyle = "text-8xl";
@@ -67,7 +67,7 @@ let variantStyle: string = "", colorStyle: string = "";
             break;
     }
 
-    // Styles de thème de couleur
+    // Détermine le thème de couleur de la tipographie
     switch (theme) {
         case "black": // Thème par défaut
             colorStyle = "text-gray";
