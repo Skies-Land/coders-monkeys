@@ -1,5 +1,7 @@
 import { IconProps } from "@/types/iconProps";
 import clsx from "clsx";
+import { Spinner } from "../spinner/spinner";
+
 
 // Définition des propriétés acceptées par le composant Button
 interface Props {
@@ -81,26 +83,36 @@ export const Button = ({
     return (
         <button
             type="button"
-            className={clsx(variantStyles, sizeStyles, icoSize)} 
+            className={clsx(variantStyles, sizeStyles, icoSize, isLoading && "cursor-wait", "relative")} 
             onClick={() => console.log("click")} 
             disabled={disabled}
         >
-            {icon && variant === "ico" ? (
-                <icon.icon size={icoSize} />
-            ) : (
-                <div className={clsx(icon && "flex items-center gap-1")}>
-                    {/* Possitionnement de l'icône à gauche */}
-                    {icon && iconPosition === "left" && (
-                        <icon.icon size={icoSize} />
-                    )}
-                    {children}
-                    {/* Possitionnement de l'icône à droite */}
-                    {icon && iconPosition === "right" && (
-                        <icon.icon size={icoSize} />
-                    )}
-                
+            {/* Condition pour rendre le Spinner (animation de chargement) en blanc si les props 
+            >variant === "accent" || variant === "ico"< sont indiquée, 
+            sinon le composant est rendu dans la couleur "primary" */}
+            {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                    {variant === "accent" || variant === "ico" ? (<Spinner size="small" variant="white" />) : (<Spinner size="small" />)}
                 </div>
             )}
+
+            <div className={clsx(isLoading && "invisible")}>
+                {icon && variant === "ico" ? (
+                    <icon.icon size={icoSize} />
+                ) : (
+                    <div className={clsx(icon && "flex items-center gap-1")}>
+                        {/* Possitionnement de l'icône à gauche */}
+                        {icon && iconPosition === "left" && (
+                            <icon.icon size={icoSize} />
+                        )}
+                        {children}
+                        {/* Possitionnement de l'icône à droite */}
+                        {icon && iconPosition === "right" && (
+                            <icon.icon size={icoSize} />
+                        )}
+                    </div>
+                )}
+            </div>
         </button>
     );
 }

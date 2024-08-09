@@ -1,5 +1,6 @@
 import { Seo } from "@/ui/components/seo";
-import { Button } from "@/ui/design-system/typography/button/button";
+import { Button } from "@/ui/design-system/button/button";
+import { Spinner } from "@/ui/design-system/spinner/spinner";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { Ri4kFill } from "react-icons/ri";
 
@@ -9,18 +10,26 @@ export default function Home() {
       <Seo title="Coders Monkers" description="Description..." />
 
       <div className="flex items-center gap-4 p-10">
+        <Spinner size="small"/>
+        <Spinner />
+        <Spinner size="large"/>
+      </div>
+
+      <div className="flex items-center gap-4 p-10">
         SMALL
-        <Button size="small">Accent</Button>
-        <Button size="small" variant="secondary">Accent</Button>
-        <Button size="small" variant="outline">Accent</Button>
-        <Button size="small" variant="disable">Accent</Button>
+        <Button isLoading size="small">Accent</Button>
+        <Button isLoading size="small" variant="secondary">Accent</Button>
+        <Button isLoading size="small" variant="outline">Accent</Button>
+        <Button isLoading size="small" variant="disable">Accent</Button>
 
         <Button size="small" icon={{ icon: Ri4kFill}} iconPosition="left" >Accent</Button>
         <Button size="small" icon={{ icon: Ri4kFill}} >Accent</Button>
 
-        <Button size="small" variant="ico" icon={{ icon: Ri4kFill}} />
+        <Button isLoading size="small" variant="ico" icon={{ icon: Ri4kFill}} />
         <Button size="small" variant="ico" icon={{ icon: Ri4kFill}} iconTheme="secondary" />
         <Button size="small" variant="ico" icon={{ icon: Ri4kFill}} iconTheme="gray" />
+
+        
       </div>
 
       <div className="flex items-center gap-4 p-10">
