@@ -15,6 +15,8 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Utilisation de la librairie **[react-icons](https://react-icons.github.io/react-icons/)** pour une intégration des icônes dans des composants React.
 - Création de composants réutilisable avec configuration de plusieurs **`switch case`** pour une meilleur gestion des rendus de manière structurée et lisible, afin de centraliser la logique de décision dans un seul endroit.
 - Création d'un composant de chargement (loading/spinner) animé, ajoutant un indicateur de chargement aux boutons pour offir une expérience utilisateur améliorée.
+- Création des composants réutilisable **`logo`** en utilisant des SVG et **`avatar`** avec le composant **next/image** pour l'intégration des images de profil utilisateur.
+- Typage des propriétés des composants avec TypeScript pour améliorer la maintenance et l'extensibilité.
 
 #
 
