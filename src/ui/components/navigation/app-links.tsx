@@ -1,6 +1,6 @@
 import { AppLinks } from "@/types/app-links";
 
-export const footerAplicationLinks: AppLinks[] = [
+const footerAplicationLinks: AppLinks[] = [
     {
         label: "Accueil",
         baseUrl: "/",
@@ -86,3 +86,22 @@ const footerSocialNetworkLinks: AppLinks[] = [
         type: "external"
     },
 ];
+
+export const footerLinks = [
+    {
+        label: "App",
+        links: footerAplicationLinks,
+    },
+    {
+        label: "Utilisateurs",
+        links: footerUserLinks,
+    },
+    {
+        label: "Informations",
+        links: footerInformationLinks,
+    },
+    {
+        label: "Réseaux",
+        links: footerSocialNetworkLinks,
+    },
+]

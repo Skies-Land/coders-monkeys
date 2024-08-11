@@ -17,12 +17,14 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Création d'un composant de chargement (loading/spinner) animé, ajoutant un indicateur de chargement aux boutons pour offir une expérience utilisateur améliorée.
 - Création des composants réutilisable **`logo`** en utilisant des SVG et **`avatar`** avec le composant **next/image** pour l'intégration des images de profil utilisateur.
 - Typage des propriétés des composants avec TypeScript pour améliorer la maintenance et l'extensibilité.
+
 ###
 **💻 Front-end**
 - Création du composant **`container`** qui permet de structurer la mise en page de l'application web de manière efficace. 
 - Intégration de la navigation avec **next/link** et **hooks router**, création et liaison des pages, et développement du composant **`activeLink`** pour styliser les liens actifs et améliorer l'expérience utilisateur.
-- Implémentation du composant **`footer`** avec des éléments visuels, génération d'identifiants uniques via la dépendance **[uuidv4](https://www.npmjs.com/package/uuidv4)** pour la [méthode map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+- Implémentation du composant **`footer`** avec des éléments visuels, génération d'identifiants uniques via la dépendance **[uuidv4](https://www.npmjs.com/package/uuidv4)** pour la **[méthode map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map)**.
 - Isolation des liens de navigation du footer dans un composant **`app-link`**, et développement de la fonction **`footerLink`** permettant d'afficher, de styliser, de structurer et de conditionner les redirections des types de lien (*"interne"* ou *"externe"*)
+- Génération dynamique des liens du footer en combinant des tableaux de données, création d'une librairie pour tester les chaînes de caractères, sécurisation du build avec **TypeScript**, et typage des objets **JavaScript** pour assurer la stabilité du code.
 
 #
 

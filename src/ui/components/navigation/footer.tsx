@@ -1,14 +1,28 @@
-import { Typography } from "@/ui/design-system/typography/typography";
+// COMPONENTS
+import { FooterLinks } from "@/types/app-links";
 import { Container } from "../container/container";
-import Image from "next/image";
-import { footerAplicationLinks } from "./app-links";
-import { v4 as uuidv4 } from "uuid";
 import { ActiveLink } from "./active-link";
+import { footerLinks } from "./app-links";
+import { LinkTypes } from "@/lib/link-type";
+
+// DESIGN SYSTEM
+import { Typography } from "@/ui/design-system/typography/typography";
+
+// DEPENDANCES
+import Image from "next/image";
+import { v4 as uuidv4 } from "uuid";
+
 
 export const Footer = () => {
-
-    const footerNavigationList = footerAplicationLinks.map((element) => (
-        <div key={uuidv4()}>{element.label}</div>
+    /** RÔLE DE CETTE FONCTION :
+    * - Mappe toutes les informations du `footerLinks` présent dans `app-links.tsx`
+    * - utilisation de uuidv4 pour générer des clés uniques pour chaque élément récupéré 
+    * - Affiche dynamiquement les liens de navigation du footer avec le composant FooterLink
+    * 
+    * @constant {JSX.Element[]} footerNavigationList - Liste des éléments de navigation du footer.
+    */
+    const footerNavigationList = footerLinks.map((colomnLinks) => (
+        <FooterLink key={uuidv4()} data={colomnLinks} />
     ));
 
     const curentYear = new Date().getFullYear();
@@ -26,18 +40,17 @@ export const Footer = () => {
                         Abonne-toi à la chaine
                     </Typography>
                     <a href="https://www.youtube.com/@remotemonkey" target="_blank">
-                        <Image
-                            src="/assets/svg/YTB.svg"
-                            alt="Remote Monkey ⎥ youtube"
+                        <Image src="/assets/svg/YTB.svg" alt="Remote Monkey ⎥ youtube"
                             width={229}
                             height={216}
-                            priority
-                        />
+                            priority />
                     </a>
                 </div>
 
                 {/* PPARTIE DU MILIEU : Liste de Liens */}
-                <div className=""><FooterLink/></div>
+                <div className="flex gap-7">
+                    {footerNavigationList}
+                </div>
             </Container>
 
             {/* BAS DU FOOTER */}
@@ -63,19 +76,36 @@ export const Footer = () => {
     );
 };
 
-const FooterLink = () => {
+interface footerLinkProps {
+    data: FooterLinks;
+}
 
-    const linksList = footerAplicationLinks.map((link) => (
+/** RÔLE DE CETTE FONCTION :
+* - Créer un composant de liste de liens pour le footer pour structurer l'affichage
+* - Gère les types de redirection des liens (interne ou externe)
+* 
+* @param {footerLinkProps} props - Les propriétés du composant FooterLink.
+* @param {Object} props.data - Les données pour générer les liens de navigation.
+* @param {string} props.data.label - Le label de la section de liens.
+* @param {Array} props.data.links - La liste des liens de navigation.
+* @param {string} props.data.links[].type - Le type de lien (interne ou externe).
+* @param {string} props.data.links[].baseUrl - L'URL de base du lien.
+* @param {string} props.data.links[].label - Le texte du lien.
+* 
+* @returns {JSX.Element} - Un composant JSX représentant une liste de liens de navigation dans le footer.
+*/
+const FooterLink = ( { data }: footerLinkProps) => {
+    const linksList = data.links.map((link) => (
         // Condition pour les liens de navigation dans le footer
         <div key={uuidv4()}>
             {/* Liens INTERNE dans l'application */}
-            {link.type === "internal" && (
+            {link.type === LinkTypes.INTERNAL && (
                 <ActiveLink href={link.baseUrl}>
                     {link.label}
                 </ActiveLink>
             )}
             {/* Liens EXTERNE dans l'application */}
-            {link.type === "external" && (
+            {link.type === LinkTypes.EXTERNAL && (
                 <a href={link.baseUrl} target="_blank">
                 {link.label}
             </a>
@@ -85,19 +115,10 @@ const FooterLink = () => {
 
     return (
         <div className="min-w-[190px]">
-            <Typography 
-                theme="white" 
-                variant="caption2" 
-                weight="medium"
-                className=""
-            >
-                titre
+            <Typography theme="white" variant="caption2" weight="medium" className="pb-5">
+                {data.label}
             </Typography>
-            <Typography 
-                theme="gray" 
-                variant="caption3" 
-                className="space-y-4"
-            >
+            <Typography theme="gray" variant="caption3" className="space-y-4">
                 {linksList}
             </Typography>
         </div>
