@@ -19,8 +19,10 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Typage des propriétés des composants avec TypeScript pour améliorer la maintenance et l'extensibilité.
 ###
 **💻 Front-end**
-- Création du composant **`container`** qui permet structurer la mise en page de l'application web de manière efficace. 
+- Création du composant **`container`** qui permet de structurer la mise en page de l'application web de manière efficace. 
 - Intégration de la navigation avec **next/link** et **hooks router**, création et liaison des pages, et développement du composant **`activeLink`** pour styliser les liens actifs et améliorer l'expérience utilisateur.
+- Implémentation du composant **`footer`** avec des éléments visuels, génération d'identifiants uniques via la dépendance **[uuidv4](https://www.npmjs.com/package/uuidv4)** pour la [méthode map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+- Isolation des liens de navigation du footer dans un composant **`app-link`**, et développement de la fonction **`footerLink`** permettant d'afficher, de styliser, de structurer et de conditionner les redirections des types de lien (*"interne"* ou *"externe"*)
 
 #
 
