@@ -4,6 +4,7 @@ import { Container } from "../container/container";
 import { ActiveLink } from "./active-link";
 import { footerLinks } from "./app-links";
 import { LinkTypes } from "@/lib/link-type";
+import { SocialNetworksButtons } from "./social-netwoks-buttons";
 
 // DESIGN SYSTEM
 import { Typography } from "@/ui/design-system/typography/typography";
@@ -69,7 +70,9 @@ export const Footer = () => {
                     </Typography>
 
                     {/* Réseaux sociaux */}
-                    <div className=""></div>
+                    <div className="">
+                        <SocialNetworksButtons theme="gray" />
+                    </div>
                 </div>
             </Container>
         </div>

@@ -1,6 +1,13 @@
-import { IconProps } from "@/types/iconProps";
-import clsx from "clsx";
+// COMPONENTS
 import { Spinner } from "../spinner/spinner";
+
+// TYPES
+import { IconProps } from "@/types/iconProps";
+import { LinkType, LinkTypes } from "@/lib/link-type";
+
+// DEPENDENCIES
+import clsx from "clsx";
+import Link from "next/link";
 
 
 // Définition des propriétés acceptées par le composant Button
@@ -13,6 +20,9 @@ interface Props {
     disabled?: boolean;
     isLoading?: boolean;
     children?: React.ReactNode;
+    baseUrl?: string;
+    linkType?: LinkType;
+    action?: Function;
 }
 
 export const Button = ({ 
@@ -24,6 +34,9 @@ export const Button = ({
     disabled,
     isLoading,
     children,
+    baseUrl,
+    linkType = "internal", // Type de lien par défaut
+    action = () => {}, // Action par défaut
 }: Props) => {
 
     let variantStyles: string = "", 
@@ -52,7 +65,7 @@ export const Button = ({
                 variantStyles = "bg-primary-200 hover:bg-primary-300/50 text-primary rounded-full";
             }
             if (iconTheme === "gray") {
-                variantStyles = "bg-gray-700 hover:bg-gray-600 text-white rounded-full";
+                variantStyles = "bg-gray-800 hover:bg-gray-700 text-white rounded-full";
             }
             break;
     }
@@ -79,23 +92,18 @@ export const Button = ({
             break;
     }
 
-    // Rendu du composant avec les classes CSS dynamiques
-    return (
-        <button
-            type="button"
-            className={clsx(variantStyles, sizeStyles, icoSize, isLoading && "cursor-wait", "relative animate")} 
-            onClick={() => console.log("click")} 
-            disabled={disabled}
-        >
+    // Contenu du bouton
+    const buttonContent = (
+        <>
             {/* Condition pour rendre le Spinner (animation de chargement) en blanc si les props 
-            >variant === "accent" || variant === "ico"< sont indiquée, 
-            sinon le composant est rendu dans la couleur "primary" */}
+                >variant === "accent" || variant === "ico"< sont indiquée, 
+                sinon le composant est rendu dans la couleur "primary" 
+            */}
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center">
                     {variant === "accent" || variant === "ico" ? (<Spinner size="small" variant="white" />) : (<Spinner size="small" />)}
                 </div>
             )}
-
             <div className={clsx(isLoading && "invisible")}>
                 {icon && variant === "ico" ? (
                     <icon.icon size={icoSize} />
@@ -113,6 +121,45 @@ export const Button = ({
                     </div>
                 )}
             </div>
-        </button>
+        </>
     );
+
+    // Action du bouton
+    const handleClick = () => {
+        if (action) {
+            action();
+        }
+    }
+
+    // Rendu du bouton
+    const buttonElement = (
+        <button
+            type="button"
+            className={clsx(
+                variantStyles, 
+                sizeStyles, 
+                isLoading && "cursor-wait", 
+                "relative animate"
+            )} 
+            onClick={handleClick} 
+            disabled={disabled}
+        >
+            {buttonContent}
+        </button>
+        
+    );
+
+    if (baseUrl) {
+        if (linkType === LinkTypes.EXTERNAL) {
+            return (
+                <a href={baseUrl} target="blank">
+                    {buttonElement}
+                </a>
+            );
+        } else {
+            return <Link href={baseUrl}>{buttonElement}</Link>;
+        }
+    } 
+
+    return buttonElement;
 }

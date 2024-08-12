@@ -23,8 +23,10 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Création du composant **`container`** qui permet de structurer la mise en page de l'application web de manière efficace. 
 - Intégration de la navigation avec **next/link** et **hooks router**, création et liaison des pages, et développement du composant **`activeLink`** pour styliser les liens actifs et améliorer l'expérience utilisateur.
 - Implémentation du composant **`footer`** avec des éléments visuels, génération d'identifiants uniques via la dépendance **[uuidv4](https://www.npmjs.com/package/uuidv4)** pour la **[méthode map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map)**.
-- Isolation des liens de navigation du footer dans un composant **`app-link`**, et développement de la fonction **`footerLink`** permettant d'afficher, de styliser, de structurer et de conditionner les redirections des types de lien (*"interne"* ou *"externe"*)
-- Génération dynamique des liens du footer en combinant des tableaux de données, création d'une librairie pour tester les chaînes de caractères, sécurisation du build avec **TypeScript**, et typage des objets **JavaScript** pour assurer la stabilité du code.
+- Isolation des liens de navigation du **`footer`** dans un composant, et développement d'une fonction permettant d'afficher, de styliser, de structurer et de conditionner les redirections des types de liens de navigation (*"interne"* ou *"externe"*) présent dans le **`footer`**
+- Génération dynamique des liens du **`footer`** en combinant des tableaux de données, 
+- Définition des interfaces **TypeScript** pour structurer et typer les données.
+- Conditionnement du comportement des boutons en fonction des actions et liens associés.
 
 #
 
