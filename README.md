@@ -8,6 +8,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Cours suivie pour la réalisation de ce projet **[Remote Monkey](https://youtube.com/playlist?list=PLtKaauZVThjAe3U3AQqa-C1fLwHR48aMM&si=EH_EwWJUuE1k5gSE)**.
 - Projet initialisé avec **[Next.js](https://nextjs.org/)**.
 - Développé avec **[React](https://fr.react.dev/)**, **[TypeScript](https://www.typescriptlang.org/)** & **[Tailwind CSS](https://tailwindcss.com/)**.
+- Projet déployer sur **[Firebase](https://firebase.google.com/)**.
 ###
 **🎨 Design Système**
 - Configuration de class Tailwind personnalisées dans le fichier **`tailwind.config`** en les déterminant via une maquette **[Figma](https://www.figma.com)**.
@@ -16,7 +17,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Création de composants réutilisable avec configuration de plusieurs **`switch case`** pour une meilleur gestion des rendus de manière structurée et lisible, afin de centraliser la logique de décision dans un seul endroit.
 - Création d'un composant de chargement (loading/spinner) animé, ajoutant un indicateur de chargement aux boutons pour offir une expérience utilisateur améliorée.
 - Création des composants réutilisable **`logo`** en utilisant des SVG et **`avatar`** avec le composant **next/image** pour l'intégration des images de profil utilisateur.
-- Typage des propriétés des composants avec TypeScript pour améliorer la maintenance et l'extensibilité.
+- Typage des propriétés des composants avec **TypeScript** pour améliorer la maintenance et l'extensibilité.
 
 ###
 **💻 Front-end**
@@ -27,6 +28,9 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Génération dynamique des liens du **`footer`** en combinant des tableaux de données, 
 - Définition des interfaces **TypeScript** pour structurer et typer les données.
 - Conditionnement du comportement des boutons en fonction des actions et liens associés.
+- Création du **`layout`** pour une structure solide de l'application.
+- Implémentation de l'architecture **"module-container-views"** qui est un modèle de conception couramment utilisé dans le développement web.
+- Développement des composants **`hero-top`** **`featured`** qui compose la landing page.
 
 #
 
