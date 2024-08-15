@@ -46,7 +46,7 @@ module.exports = {
         }
       ],
       '6xl': [
-        '72px', 
+        '55px', 
         {
           lineHeight: '60px',
           letterSpacing: '-2.5px',
@@ -64,7 +64,7 @@ module.exports = {
       '4xl': [
         '36px', 
         {
-          lineHeight: '40px',
+          lineHeight: '44px',
           letterSpacing: '-1.2px',
           fontWeight: '500',
         }

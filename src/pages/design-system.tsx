@@ -102,144 +102,147 @@ export default function DesignSystem() {
                 <div className="flex items-start gap-7">
                     {/* Spinner */}
                     <div className="space-y-2 mt-3">
-                    <Typography variant="lead" theme="primary" weight="medium">
-                        Spinners
-                    </Typography>
-                    <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
-                        <Spinner size="small" />
-                        <Spinner />
-                        <Spinner size="large" />
-                    </div>
+                        <Typography variant="lead" theme="primary" weight="medium">
+                            Spinners
+                        </Typography>
+                        <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+                            <Spinner size="small" />
+                            <Spinner />
+                            <Spinner size="large" />
+                        </div>
                     </div>
 
                     {/* Avatar */}
                     <div className="space-y-2 mt-3">
-                    <Typography variant="lead" theme="primary" weight="medium">
-                        Avatar
-                    </Typography>
-                    <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
-                        <Avatar size="small" src="/assets/images/daniel-lincoln-pe-X2NUwVQo-unsplash1.png" alt="Avatar de profil"/>
-                        <Avatar src="/assets/images/daniel-lincoln-pe-X2NUwVQo-unsplash1.png" alt="Avatar de profil"/>
-                        <Avatar size="large" src="/assets/images/daniel-lincoln-pe-X2NUwVQo-unsplash1.png" alt="Avatar de profil"/>
-                    </div>
+                        <Typography variant="lead" theme="primary" weight="medium">
+                            Avatar
+                        </Typography>
+                        <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+                            <Avatar size="small" src="/assets/images/daniel-lincoln-pe-X2NUwVQo-unsplash1.png" alt="Avatar de profil"/>
+                            <Avatar src="/assets/images/daniel-lincoln-pe-X2NUwVQo-unsplash1.png" alt="Avatar de profil"/>
+                            <Avatar size="large" src="/assets/images/daniel-lincoln-pe-X2NUwVQo-unsplash1.png" alt="Avatar de profil"/>
+                        </div>
                     </div>
 
                     {/* Logo */}
                     <div className="space-y-2 mt-3">
-                    <Typography variant="lead" theme="primary" weight="medium">
-                        Logo
-                    </Typography>
-                    <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
-                        <Logo size="very-small" />
-                        <Logo size="small" />
-                        <Logo />
-                        <Logo size="large" />
-                    </div>
+                        <Typography variant="lead" theme="primary" weight="medium">
+                            Logo
+                        </Typography>
+                        <div className="flex items-center gap-2 p-5 border border-gray-400 rounded">
+                            <Logo size="very-small" />
+                            <Logo size="small" />
+                            <Logo />
+                            <Logo size="large" />
+                        </div>
                     </div>
                 </div>
 
                 {/* Buttons */}
                 <div className="space-y-2 mt-3">
                     <Typography variant="lead" theme="primary" weight="medium">
-                    Buttons
+                        Buttons
                     </Typography>
                     <div className="p-5 space-y8 border border-gray-400 rounded">
 
-                    <div className="space-y-2">
-                        <Typography variant="body-lg" weight="medium">
-                        Small
-                        </Typography>
-                        <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                            <Button size="small">Accent</Button>
-                            <Button size="small" variant="secondary">Secondary</Button>
-                            <Button size="small" variant="outline">Outline</Button>
-                            <Button size="small" variant="disable">Disable</Button>
-                            <Button size="small" icon={{ icon: RiArrowRightSLine }}iconPosition="left">Accent</Button>
-                            <Button size="small" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
-                            <Button size="small" variant="ico" icon={{ icon: RiNotification3Line }} />
-                            <Button size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
-                            <Button size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray" />
+                        <div className="space-y-2">
+                            <Typography variant="body-lg" weight="medium">
+                                Small
+                            </Typography>
+                            <div className="space-y-4">
+                                <div className="flex items-center gap-2">
+                                    <Button size="small">Accent</Button>
+                                    <Button size="small" variant="secondary">Secondary</Button>
+                                    <Button size="small" variant="outline">Outline</Button>
+                                    <Button size="small" variant="disable">Disable</Button>
+                                    <Button size="small" variant="sucess">Sucess</Button>
+                                    <Button size="small" icon={{ icon: RiArrowRightSLine }}iconPosition="left">Accent</Button>
+                                    <Button size="small" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
+                                    <Button size="small" variant="ico" icon={{ icon: RiNotification3Line }} />
+                                    <Button size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
+                                    <Button size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray" />
+                                </div>
+                            </div>
                         </div>
+                        <div className="space-y-2">
+                            <div className="flex items-center gap-2">
+                                <Button isLoading size="small">Accent</Button>
+                                <Button isLoading size="small" variant="secondary">Secondary</Button>
+                                <Button isLoading size="small" variant="outline">Outline</Button>
+                                <Button isLoading size="small" variant="disable">Disable</Button>
+                                <Button isLoading size="small" icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent</Button>
+                                <Button isLoading size="small" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
+                                <Button isLoading size="small" variant="ico" icon={{ icon: RiNotification3Line }} />
+                                <Button isLoading size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
+                                <Button isLoading size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray"/>
+                            </div>
                         </div>
-                    </div>
-                    <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                            <Button isLoading size="small">Accent</Button>
-                            <Button isLoading size="small" variant="secondary">Secondary</Button>
-                            <Button isLoading size="small" variant="outline">Outline</Button>
-                            <Button isLoading size="small" variant="disable">Disable</Button>
-                            <Button isLoading size="small" icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent</Button>
-                            <Button isLoading size="small" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
-                            <Button isLoading size="small" variant="ico" icon={{ icon: RiNotification3Line }} />
-                            <Button isLoading size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
-                            <Button isLoading size="small" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray"/>
-                        </div>
-                    </div>
 
-                    <div className="space-y-2 mt-8">
-                        <Typography variant="body-lg" weight="medium">
-                        Medium
-                        </Typography>
-                        <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                            <Button>Accent</Button>
-                            <Button variant="secondary">Secondary</Button>
-                            <Button variant="outline">Outline</Button>
-                            <Button variant="disable">Disable</Button>
-                            <Button icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent</Button>
-                            <Button icon={{ icon: RiArrowRightSLine }}>Accent</Button>
-                            <Button variant="ico" icon={{ icon: RiNotification3Line }} />
-                            <Button variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
-                            <Button variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray"/>
+                        <div className="space-y-2 mt-8">
+                            <Typography variant="body-lg" weight="medium">
+                                Medium
+                            </Typography>
+                            <div className="space-y-4">
+                                <div className="flex items-center gap-2">
+                                    <Button>Accent</Button>
+                                    <Button variant="secondary">Secondary</Button>
+                                    <Button variant="outline">Outline</Button>
+                                    <Button variant="disable">Disable</Button>
+                                    <Button variant="sucess">Sucess</Button>
+                                    <Button icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent</Button>
+                                    <Button icon={{ icon: RiArrowRightSLine }}>Accent</Button>
+                                    <Button variant="ico" icon={{ icon: RiNotification3Line }} />
+                                    <Button variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
+                                    <Button variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray"/>
+                                </div>
+                            </div>
                         </div>
+                        <div className="space-y-2">
+                            <div className="flex items-center gap-2">
+                                <Button isLoading >Accent</Button>
+                                <Button isLoading variant="secondary">Secondary</Button>
+                                <Button isLoading variant="outline">Outline</Button>
+                                <Button isLoading variant="disable">Disable</Button>
+                                <Button isLoading icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent </Button>
+                                <Button isLoading icon={{ icon: RiArrowRightSLine }}>Accent</Button>
+                                <Button isLoading variant="ico" icon={{ icon: RiNotification3Line }} />
+                                <Button isLoading variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
+                                <Button isLoading variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray" />
+                            </div>
                         </div>
-                    </div>
-                    <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                            <Button isLoading >Accent</Button>
-                            <Button isLoading variant="secondary">Secondary</Button>
-                            <Button isLoading variant="outline">Outline</Button>
-                            <Button isLoading variant="disable">Disable</Button>
-                            <Button isLoading icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent </Button>
-                            <Button isLoading icon={{ icon: RiArrowRightSLine }}>Accent</Button>
-                            <Button isLoading variant="ico" icon={{ icon: RiNotification3Line }} />
-                            <Button isLoading variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
-                            <Button isLoading variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray" />
-                        </div>
-                    </div>
 
-                    <div className="space-y-2 mt-8">
-                        <Typography variant="body-lg" weight="medium">
-                        Large
-                        </Typography>
-                        <div className="space-y-4">
-                        <div className="flex items-center gap-2">
-                            <Button size="large">Accent</Button>
-                            <Button size="large" variant="secondary">Secondary</Button>
-                            <Button size="large" variant="outline">Outline</Button>
-                            <Button size="large" variant="disable">Disable</Button>
-                            <Button size="large" icon={{ icon: RiArrowRightSLine }}iconPosition="left">Accent</Button>
-                            <Button size="large" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
-                            <Button size="large" variant="ico" icon={{ icon: RiNotification3Line }} />
-                            <Button size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
-                            <Button size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray" />
+                        <div className="space-y-2 mt-8">
+                            <Typography variant="body-lg" weight="medium">
+                                Large
+                            </Typography>
+                            <div className="space-y-4">
+                                <div className="flex items-center gap-2">
+                                    <Button size="large">Accent</Button>
+                                    <Button size="large" variant="secondary">Secondary</Button>
+                                    <Button size="large" variant="outline">Outline</Button>
+                                    <Button size="large" variant="disable">Disable</Button>
+                                    <Button size="large" variant="sucess">Sucess</Button>
+                                    <Button size="large" icon={{ icon: RiArrowRightSLine }}iconPosition="left">Accent</Button>
+                                    <Button size="large" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
+                                    <Button size="large" variant="ico" icon={{ icon: RiNotification3Line }} />
+                                    <Button size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
+                                    <Button size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray" />
+                                </div>
+                            </div>
                         </div>
+                        <div className="space-y-2">
+                            <div className="flex items-center gap-2">
+                                <Button isLoading size="large">Accent</Button>
+                                <Button isLoading size="large" variant="secondary">Secondary</Button>
+                                <Button isLoading size="large" variant="outline">Outline</Button>
+                                <Button isLoading size="large" variant="disable">Disable</Button>
+                                <Button isLoading size="large" icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent</Button>
+                                <Button isLoading size="large" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
+                                <Button isLoading size="large" variant="ico" icon={{ icon: RiNotification3Line }} />
+                                <Button isLoading size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
+                                <Button isLoading size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray"/>
+                            </div>
                         </div>
-                    </div>
-                    <div className="space-y-2">
-                        <div className="flex items-center gap-2">
-                            <Button isLoading size="large">Accent</Button>
-                            <Button isLoading size="large" variant="secondary">Secondary</Button>
-                            <Button isLoading size="large" variant="outline">Outline</Button>
-                            <Button isLoading size="large" variant="disable">Disable</Button>
-                            <Button isLoading size="large" icon={{ icon: RiArrowRightSLine }} iconPosition="left">Accent</Button>
-                            <Button isLoading size="large" icon={{ icon: RiArrowRightSLine }}>Accent</Button>
-                            <Button isLoading size="large" variant="ico" icon={{ icon: RiNotification3Line }} />
-                            <Button isLoading size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="secondary" />
-                            <Button isLoading size="large" variant="ico" icon={{ icon: RiNotification3Line }} iconTheme="gray"/>
-                        </div>
-                    </div>
 
                     </div>
                 </div>

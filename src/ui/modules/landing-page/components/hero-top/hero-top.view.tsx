@@ -1,7 +1,12 @@
+// DEPENDENCIES
+import Image from "next/image";
+
+// COMPONENTS
 import { Container } from "@/ui/components/container/container";
+
+// DESIGN SYSTEM
 import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
-import Image from "next/image";
 
 export const HeroTopView = () => {
     return (

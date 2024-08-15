@@ -16,21 +16,21 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Utilisation de la librairie **[react-icons](https://react-icons.github.io/react-icons/)** pour une intégration des icônes dans des composants React.
 - Création de composants réutilisable avec configuration de plusieurs **`switch case`** pour une meilleur gestion des rendus de manière structurée et lisible, afin de centraliser la logique de décision dans un seul endroit.
 - Création d'un composant de chargement (loading/spinner) animé, ajoutant un indicateur de chargement aux boutons pour offir une expérience utilisateur améliorée.
-- Création des composants réutilisable **`logo`** en utilisant des SVG et **`avatar`** avec le composant **next/image** pour l'intégration des images de profil utilisateur.
+- Création des composants réutilisable **`Logo`** en utilisant des SVG et **`Avatar`** avec le composant **next/image** pour l'intégration des images de profil utilisateur.
 - Typage des propriétés des composants avec **TypeScript** pour améliorer la maintenance et l'extensibilité.
 
 ###
 **💻 Front-end**
-- Création du composant **`container`** qui permet de structurer la mise en page de l'application web de manière efficace. 
-- Intégration de la navigation avec **next/link** et **hooks router**, création et liaison des pages, et développement du composant **`activeLink`** pour styliser les liens actifs et améliorer l'expérience utilisateur.
-- Implémentation du composant **`footer`** avec des éléments visuels, génération d'identifiants uniques via la dépendance **[uuidv4](https://www.npmjs.com/package/uuidv4)** pour la **[méthode map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map)**.
-- Isolation des liens de navigation du **`footer`** dans un composant, et développement d'une fonction permettant d'afficher, de styliser, de structurer et de conditionner les redirections des types de liens de navigation (*"interne"* ou *"externe"*) présent dans le **`footer`**
-- Génération dynamique des liens du **`footer`** en combinant des tableaux de données, 
+- Création du composant **`Container`** qui permet de structurer la mise en page de l'application web de manière efficace. 
+- Intégration de la navigation avec **next/link** et **hooks router**, création et liaison des pages, et développement du composant **`ActiveLink`** pour styliser les liens actifs et améliorer l'expérience utilisateur.
+- Implémentation du composant **`Footer`** avec des éléments visuels, génération d'identifiants uniques via la dépendance **[uuidv4](https://www.npmjs.com/package/uuidv4)** pour la **[méthode map()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/map)**.
+- Isolation des liens de navigation du **`Footer`** dans un composant, et développement d'une fonction permettant d'afficher, de styliser, de structurer et de conditionner les redirections des types de liens de navigation (*"interne"* ou *"externe"*) présent dans le **`Footer`**
+- Génération dynamique des liens du **`Footer`** en combinant des tableaux de données, 
 - Définition des interfaces **TypeScript** pour structurer et typer les données.
 - Conditionnement du comportement des boutons en fonction des actions et liens associés.
-- Création du **`layout`** pour une structure solide de l'application.
+- Création du **`Layout`** pour une structure solide de l'application.
 - Implémentation de l'architecture **"module-container-views"** qui est un modèle de conception couramment utilisé dans le développement web.
-- Développement des composants **`hero-top`** **`featured`** qui compose la landing page.
+- Développement des composants **`HeroTopView`**, **`Featuredview`**, **`CodersMonkeysSlackView`**, **`CurrentCourseCtaView`**, **`HighlightListView`** et **`CallToActionView`** qui composent la landing page.
 
 #
 

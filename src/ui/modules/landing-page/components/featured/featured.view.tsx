@@ -1,4 +1,4 @@
-// DEPENDANCES
+// DEPENDENCIES
 import { v4 as uuidv4 } from "uuid";
 import Image from "next/image";
 import { RiArrowRightLine } from "react-icons/ri";
@@ -11,6 +11,7 @@ import { SocialNetworksButtons } from "@/ui/components/navigation/social-netwoks
 import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
 
+// INTERFACES
 interface FeaturesListInterface {
     imagePath: string;
     imageAlt: string;
@@ -18,6 +19,7 @@ interface FeaturesListInterface {
     description: string;
 }
 
+// DATA
 const featuresData: FeaturesListInterface[] = [
     {
         imagePath: "/assets/svg/diskette.svg",
