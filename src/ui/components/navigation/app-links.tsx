@@ -1,5 +1,8 @@
-import { AppLinks } from "@/types/app-links";
+// DEPENDENCIES
 import { RiLinkedinFill, RiSlackFill, RiYoutubeFill } from "react-icons/ri";
+
+// TYPES
+import { AppLinks } from "@/types/app-links";
 
 const footerAplicationLinks: AppLinks[] = [
     {
@@ -32,17 +35,17 @@ const footerUserLinks: AppLinks[] = [
     },
     {
         label: "Connexion",
-        baseUrl: "/#",
+        baseUrl: "/connexion",
         type: "internal"
     },
     {
         label: "Inscription",
-        baseUrl: "/#",
+        baseUrl: "/connexion/inscription",
         type: "internal"
     },
     {
         label: "Mot de passe oublié",
-        baseUrl: "/#",
+        baseUrl: "/connexion/mots-de-passe-perdu",
         type: "internal"
     },
 ];

@@ -1,12 +1,15 @@
 // DEPENDENCIES
+import Image from "next/image";
 
 // COMPONENTS
-
 import { Container } from "@/ui/components/container/container";
-import { Typography } from "../typography/typography";
+
+// DESIGN SYSTEM
 import { Button } from "../button/button";
+import { Typography } from "../typography/typography";
+
+// TYPES
 import { LinkTypes } from "@/lib/link-type";
-import Image from "next/image";
 
 export const CallToActionView = () => {
     return (

@@ -31,6 +31,8 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Création du **`Layout`** pour une structure solide de l'application.
 - Implémentation de l'architecture **"module-container-views"** qui est un modèle de conception couramment utilisé dans le développement web.
 - Développement des composants **`HeroTopView`**, **`Featuredview`**, **`CodersMonkeysSlackView`**, **`CurrentCourseCtaView`**, **`HighlightListView`** et **`CallToActionView`** qui composent la landing page.
+- Développement et implémentation des composants d'authentification (connexion, inscription, récupération de mot de passe).
+- Ajout d'intéractivité avec nagivation facilité dans les pages d'authentification avec le composant **`breadcrumbs`** fil d'Ariane.
 
 #
 

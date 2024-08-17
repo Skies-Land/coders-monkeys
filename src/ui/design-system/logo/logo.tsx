@@ -1,3 +1,4 @@
+// INTERFACES
 interface Props {
   size?: "very-small" | "small" | "medium" | "large";
 }

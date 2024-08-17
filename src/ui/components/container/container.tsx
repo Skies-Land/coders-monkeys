@@ -1,4 +1,7 @@
+// DEPENDENCIES
 import clsx from "clsx";
+
+// INTERFACES
 
 interface Props {
     children: React.ReactNode;

@@ -2,7 +2,7 @@
 import { Button } from "@/ui/design-system/button/button";
 import { footerSocialNetworkLinks } from "./app-links";
 
-// DEPENDANCES
+// DEPENDENCIES
 import { v4 as uuidv4 } from "uuid";
 import clsx from "clsx";
 import { RiFacebookFill } from "react-icons/ri";

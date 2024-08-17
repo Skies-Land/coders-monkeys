@@ -1,8 +1,10 @@
+// DEPENDENCIES
 import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMemo } from "react";
 
+// INTERFACES
 interface Props {
     href: string;
     children: React.ReactNode;

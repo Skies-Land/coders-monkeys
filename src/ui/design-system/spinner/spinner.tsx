@@ -1,5 +1,7 @@
+// DEPENDENCIES
 import clsx from "clsx";
 
+// INTERFACES
 interface Props {
     size?: "small" | "medium" | "large";
     variant?: "primary" | "white";

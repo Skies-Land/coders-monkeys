@@ -1,7 +1,6 @@
 // COMPONENTS
 import { Container } from "@/ui/components/container/container";
 import { Layout } from "@/ui/components/layout/layout";
-import { Navigation } from "@/ui/components/navigation/navigation";
 import { Seo } from "@/ui/components/seo/seo";
 
 // DESIGN SYSTEM

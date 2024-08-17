@@ -1,5 +1,8 @@
-import { LinkType } from "@/lib/link-type";
+// DEPENDENCIES
 import { IconType } from "react-icons";
+
+// TYPES
+import { LinkType } from "@/lib/link-type";
 
 export interface AppLinks {
     label: string;

@@ -9,7 +9,7 @@ import { SocialNetworksButtons } from "./social-netwoks-buttons";
 // DESIGN SYSTEM
 import { Typography } from "@/ui/design-system/typography/typography";
 
-// DEPENDANCES
+// DEPENDENCIES
 import Image from "next/image";
 import { v4 as uuidv4 } from "uuid";
 
@@ -62,7 +62,7 @@ export const Footer = () => {
                     {/* Copyright */}
                     <Typography variant="caption4" theme="gray">
                         {`Copyright © ${curentYear} | Propulsed by`}{" "}
-                        <a href="portfolio-jonathan-araldi.netlify.app/" target="_blank" className="underline">
+                        <a href="https://portfolio-jonathan-araldi.netlify.app/" target="_blank" className="underline">
                             Jonathan Araldi
                         </a>
                         {` - SkiesLand`}

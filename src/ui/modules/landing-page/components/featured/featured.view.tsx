@@ -94,7 +94,7 @@ export const FeaturedView = () => {
                             Du partage, des connexions et des formations notre app gère tout ça pour toi. 
                             Rejoins la communauté et grimpe en grade. Let's go !
                         </Typography>
-                        <Button variant="secondary" baseUrl="/#" icon={{icon: RiArrowRightLine}} iconPosition="right">
+                        <Button variant="secondary" baseUrl="/connexion/inscription" icon={{icon: RiArrowRightLine}} iconPosition="right">
                             Commencer
                         </Button>
                     </div>

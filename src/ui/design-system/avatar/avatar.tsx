@@ -1,6 +1,8 @@
+// DEPENDENCIES
 import clsx from "clsx";
 import Image from "next/image";
 
+// INTERFACES
 interface Props {
   size?: "small" | "medium" | "large";
   src: string;
