@@ -9,8 +9,13 @@ import { LoginForm } from "./login-form";
 // DESIGN SYSTEM
 import { Box } from "@/ui/design-system/box/box";
 import { Typography } from "@/ui/design-system/typography/typography";
+import { FormsType } from "@/types/forms";
 
-export const LoginView = () => {    
+interface Props {
+    form: FormsType;
+}
+
+export const LoginView = ({form}: Props) => {    
     return (
         <Container className="grid grid-cols-2 gap-20 mb-32">
             {/* IMAGE */}
@@ -27,7 +32,6 @@ export const LoginView = () => {
             {/* FORMULAIRE DE CONNEXION */}
             <div className="flex items-center">
                 <Box padding_y="py-5">
-                    
                     <div className="flex items-center justify-between">
                         <Typography variant="h5" component="h1">
                             Connexion
@@ -41,7 +45,7 @@ export const LoginView = () => {
                             </Typography>
                         </div>
                     </div>
-                    <LoginForm />
+                    <LoginForm form={form} />
                 </Box>
             </div>
         </Container>

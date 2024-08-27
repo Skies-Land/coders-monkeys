@@ -9,8 +9,13 @@ import { RegisterForm } from "./register-form";
 // DESIGN SYSTEM
 import { Box } from "@/ui/design-system/box/box";
 import { Typography } from "@/ui/design-system/typography/typography";
+import { FormsType } from "@/types/forms";
 
-export const RegisterView = () => {    
+interface Props {
+    form: FormsType;
+}
+
+export const RegisterView = ({ form }: Props) => {    
     return (
         <Container className="grid grid-cols-2 gap-20 mb-32">
             {/* IMAGE */}
@@ -41,7 +46,7 @@ export const RegisterView = () => {
                             </Typography>
                         </div>
                     </div>
-                    <RegisterForm />
+                    <RegisterForm form={form}/>
                 </Box>
             </div>
         </Container>

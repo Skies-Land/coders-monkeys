@@ -18,6 +18,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Création d'un composant de chargement (loading/spinner) animé, ajoutant un indicateur de chargement aux boutons pour offir une expérience utilisateur améliorée.
 - Création des composants réutilisable **`Logo`** en utilisant des SVG et **`Avatar`** avec le composant **next/image** pour l'intégration des images de profil utilisateur.
 - Typage des propriétés des composants avec **TypeScript** pour améliorer la maintenance et l'extensibilité.
+- Développement d'un design système pour les champs de formulaire avec composants réutilisables.
 
 ###
 **💻 Front-end**
@@ -33,6 +34,8 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Développement des composants **`HeroTopView`**, **`Featuredview`**, **`CodersMonkeysSlackView`**, **`CurrentCourseCtaView`**, **`HighlightListView`** et **`CallToActionView`** qui composent la landing page.
 - Développement et implémentation des composants d'authentification (connexion, inscription, récupération de mot de passe).
 - Ajout d'intéractivité avec nagivation facilité dans les pages d'authentification avec le composant **`breadcrumbs`** fil d'Ariane.
+- Installation et configuration de **[react-hook-form](https://react-hook-form.com/)** pour la création de formulaire avancé.
+
 
 #
 
