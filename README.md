@@ -9,6 +9,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Projet initialisé avec **[Next.js](https://nextjs.org/)**.
 - Développé avec **[React](https://fr.react.dev/)**, **[TypeScript](https://www.typescriptlang.org/)** & **[Tailwind CSS](https://tailwindcss.com/)**.
 - Projet déployer sur **[Firebase](https://firebase.google.com/)**.
+
 ###
 **🎨 Design Système**
 - Configuration de class Tailwind personnalisées dans le fichier **`tailwind.config`** en les déterminant via une maquette **[Figma](https://www.figma.com)**.
@@ -36,6 +37,9 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Ajout d'intéractivité avec nagivation facilité dans les pages d'authentification avec le composant **`breadcrumbs`** fil d'Ariane.
 - Installation et configuration de **[react-hook-form](https://react-hook-form.com/)** pour la création de formulaire avancé.
 
+###
+**💻 Back-end (Firebase)**
+- Mise en place de l'authetification avec **[Firebase](https://firebase.google.com/)**, gestion des erreurs optimisée via **[react-hook-form](https://react-hook-form.com/)**, isolation de la logique métier, création d'un système de notifications animées, et développement d'un custom hook pour gérer les valeurs booléennes.
 
 #
 
