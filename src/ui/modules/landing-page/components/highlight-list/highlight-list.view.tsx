@@ -9,7 +9,6 @@ import { Container } from "@/ui/components/container/container";
 import { Button } from "@/ui/design-system/button/button";
 import { Typography } from "@/ui/design-system/typography/typography";
 
-
 export const HighlightListView = () => {
     return (
         <Container className="py-24 space-y-10">
@@ -77,6 +76,7 @@ export const HighlightListView = () => {
     );
 };
 
+// INTERFACES
 interface Props {
     children: React.ReactNode;
 }

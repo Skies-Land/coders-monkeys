@@ -1,6 +1,10 @@
+// DEPENDENCIES
 import clsx from "clsx";
+
+// DESIGN SYSTEM
 import { Typography } from "../typography/typography";
 
+// INTERFACES
 interface Props {
     isLoading: boolean;
     placeholder: string;

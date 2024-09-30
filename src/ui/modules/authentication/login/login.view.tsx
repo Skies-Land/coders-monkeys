@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// COMPONENT
+// COMPONENTS
 import { Container } from "@/ui/components/container/container";
 import { LoginForm } from "./login-form";
 
@@ -11,6 +11,7 @@ import { Box } from "@/ui/design-system/box/box";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { FormsType } from "@/types/forms";
 
+// INTERFACES
 interface Props {
     form: FormsType;
 }
@@ -46,6 +47,11 @@ export const LoginView = ({form}: Props) => {
                         </div>
                     </div>
                     <LoginForm form={form} />
+                    <Typography variant="caption4" theme="primary">
+                        <Link href="/connexion/mots-de-passe-perdu" className="flex justify-center">
+                            Mots de passe perdu ?
+                        </Link>
+                    </Typography>
                 </Box>
             </div>
         </Container>

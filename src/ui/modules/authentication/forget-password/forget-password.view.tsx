@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// COMPONENT
+// COMPONENTS
 import { Container } from "@/ui/components/container/container";
 import { ForgetPasswordForm } from "./forget-password.form";
 
@@ -11,6 +11,7 @@ import { Box } from "@/ui/design-system/box/box";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { FormsType } from "@/types/forms";
 
+// INTERFACES
 interface Props {
     form: FormsType;
 }

@@ -1,14 +1,21 @@
-import { SubmitHandler, useForm } from "react-hook-form";
-import { RegisterView } from "./register.view";
-import { RegisterFormFilelsType } from "@/types/forms";
+// API
 import { firebaseCreateUser } from "@/api/authentication";
-import { toast } from 'react-toastify';
+
+// TYPES
+import { RegisterFormFilelsType } from "@/types/forms";
+
+// HOOKS
 import { useToggle } from "@/hooks/use-toggle";
 
+// DESIGN SYSTEM
+import { RegisterView } from "./register.view";
+
+// DEPENDENCIES
+import { SubmitHandler, useForm } from "react-hook-form";
+import { toast } from 'react-toastify';
+
 export const RegisterContainer = () => {
-    const { value: isLoading, setValue: setIsLoading } = useToggle({ 
-        initial: true 
-    });
+    const { value: isLoading, setValue: setIsLoading } = useToggle();
 
     const {
         handleSubmit,

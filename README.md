@@ -31,6 +31,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Définition des interfaces **TypeScript** pour structurer et typer les données.
 - Conditionnement du comportement des boutons en fonction des actions et liens associés.
 - Création du **`Layout`** pour une structure solide de l'application.
+- Implémentation d'une side bar dynamique dans le commosant **`Layout`** pour la gestion de l'espace membre.
 - Implémentation de l'architecture **"module-container-views"** qui est un modèle de conception couramment utilisé dans le développement web.
 - Développement des composants **`HeroTopView`**, **`Featuredview`**, **`CodersMonkeysSlackView`**, **`CurrentCourseCtaView`**, **`HighlightListView`** et **`CallToActionView`** qui composent la landing page.
 - Développement et implémentation des composants d'authentification (connexion, inscription, récupération de mot de passe).
@@ -38,8 +39,10 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Installation et configuration de **[react-hook-form](https://react-hook-form.com/)** pour la création de formulaire avancé.
 
 ###
-**💻 Back-end (Firebase)**
-- Mise en place de l'authetification avec **[Firebase](https://firebase.google.com/)**, gestion des erreurs optimisée via **[react-hook-form](https://react-hook-form.com/)**, isolation de la logique métier, création d'un système de notifications animées, et développement d'un custom hook pour gérer les valeurs booléennes.
+**💻 Firebase**
+- Mise en place de l'authentification avec **[Firebase](https://firebase.google.com/)**, gestion des erreurs optimisée via **[react-hook-form](https://react-hook-form.com/)**, isolation de la logique métier, création d'un système de notifications animées, et développement d'un custom hook pour gérer les valeurs booléennes.
+- Création de la navigation entre les formulaires (*connexion / inscription / récupération de mot de passe*) avec mise en place de la connexion et déconnexion des utilisateurs via **[Firebase](https://firebase.google.com/)**.
+- Implémentation de la fonctionnalité de récupération de mot de passe.
 
 #
 

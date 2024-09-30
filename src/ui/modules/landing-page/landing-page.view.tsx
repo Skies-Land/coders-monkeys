@@ -8,7 +8,6 @@ import { HighlightListView } from "./components/highlight-list/highlight-list.vi
 // DESIGN SYSTEM
 import { CallToActionView } from "@/ui/design-system/call-to-action/call-to-action.view";
 
-
 export const LandingPageView = () => {
     return (
         <>

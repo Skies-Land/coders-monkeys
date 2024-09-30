@@ -1,7 +1,11 @@
+// TYPES
 import { FormsType } from "@/types/forms";
+
+// DESIGN SYSTEM
 import { Button } from "@/ui/design-system/button/button";
 import { Input } from "@/ui/design-system/forms/input";
 
+// INTERFACES
 interface Props {
     form: FormsType;
 }

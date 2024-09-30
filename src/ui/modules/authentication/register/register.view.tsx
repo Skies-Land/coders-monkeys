@@ -11,6 +11,7 @@ import { Box } from "@/ui/design-system/box/box";
 import { Typography } from "@/ui/design-system/typography/typography";
 import { FormsType } from "@/types/forms";
 
+// INTERFACES
 interface Props {
     form: FormsType;
 }
@@ -32,7 +33,6 @@ export const RegisterView = ({ form }: Props) => {
             {/* FORMULAIRE D'INSCRIPTION */}
             <div className="flex items-center">
                 <Box padding_y="py-5">
-                    
                     <div className="flex items-center justify-between">
                         <Typography variant="h5" component="h1">
                             Inscription
@@ -47,6 +47,19 @@ export const RegisterView = ({ form }: Props) => {
                         </div>
                     </div>
                     <RegisterForm form={form}/>
+                    <Typography variant="caption4" theme="gray" className="max-w-md mx-auto space-y1 text-center">
+                        <div>En t'inscrivant, tu acceptes les</div>
+                        <div>
+                            <Link href="/#" className="text-gray">
+                                Conditions d'utilisation
+                            </Link>
+                            {" "} et la  {" "}
+                            <Link href="/#" className="text-gray">
+                                Politique de confidentialité
+                            </Link>
+                            .
+                        </div>
+                    </Typography>
                 </Box>
             </div>
         </Container>
