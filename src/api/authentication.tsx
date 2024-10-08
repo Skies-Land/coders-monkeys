@@ -3,14 +3,15 @@ import {
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword, 
     signOut,
-    sendPasswordResetEmail
+    sendPasswordResetEmail,
+    sendEmailVerification
 } from "firebase/auth";
 import { FirebaseError } from "firebase/app";
 
 // CONFIGURATION FIREBASE
 import { auth } from "@/config/firebase-config";
 
-// Fonction pour CRÉER un utilisateur avec Firebase Authentication
+// Fonction pour >CRÉER< un utilisateur avec Firebase Authentication
 export const firebaseCreateUser = async (email: string, password: string) => {
     try {
         const userCredential = await createUserWithEmailAndPassword(
@@ -31,7 +32,7 @@ export const firebaseCreateUser = async (email: string, password: string) => {
     }
 };
 
-// Fonction pour CONNECTER un utilisateur avec Firebase Authentication
+// Fonction pour >CONNECTER< un utilisateur avec Firebase Authentication
 export const firebaseSignInUser = async (email: string, password: string) => {
     try {
         const userCredential = await signInWithEmailAndPassword(
@@ -52,7 +53,7 @@ export const firebaseSignInUser = async (email: string, password: string) => {
     }
 };
 
-// Fonction pour DÉCONNECTER un utilisateur avec Firebase Authentication
+// Fonction pour >DÉCONNECTER< un utilisateur avec Firebase Authentication
 export const firebaseLogoutUser = async () => {
     try {
         await signOut(auth);
@@ -69,7 +70,7 @@ export const firebaseLogoutUser = async () => {
     }
 };
 
-// Fonction pour RÉINITIALISER LE PASSWORD de l'utilisateur avec Firebase Authentication
+// Fonction pour >RÉINITIALISER LE PASSWORD< de l'utilisateur avec Firebase Authentication
 export const sendEmailToResetPassword = async (email: string) => {
     try {
         await sendPasswordResetEmail(auth, email);
@@ -83,5 +84,31 @@ export const sendEmailToResetPassword = async (email: string) => {
                 message: firebaseError.message,
             }, 
         };
+    }
+};
+
+// Fonction pour >ENVOYER UN EMAIL DE VÉRIFICATION< à l'utilisateur avec Firebase Authentication
+export const sendEmailVerificationProcedure = async () => {
+    if (auth.currentUser) {
+        try {
+            await sendEmailVerification(auth.currentUser);
+            return { data: true }
+        } catch (error) {
+            const firebaseError = error as FirebaseError;
+            // format error
+            return { 
+                error: {
+                    code: firebaseError.code,
+                    message: firebaseError.message,
+                }, 
+            };
+        }
+    } else {
+        return {
+            error: {
+                code: "unknown",
+                message: "Aucun utilisateur n'est connecté.",
+            }
+        }
     }
 };

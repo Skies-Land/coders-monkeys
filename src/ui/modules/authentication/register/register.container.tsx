@@ -1,5 +1,6 @@
 // API
-import { firebaseCreateUser } from "@/api/authentication";
+import { firebaseCreateUser, sendEmailVerificationProcedure } from "@/api/authentication";
+import { firestoseCreateDocument } from "@/api/firestore";
 
 // TYPES
 import { RegisterFormFilelsType } from "@/types/forms";
@@ -25,6 +26,19 @@ export const RegisterContainer = () => {
         reset,
     } = useForm<RegisterFormFilelsType>();
 
+    const handleCreateUserDocument = async (collectionName: string, documentID: string, document: object) => {
+        const { error } = await firestoseCreateDocument(collectionName, documentID, document);
+        if (error) {
+            toast.error(error.message);
+            setIsLoading(false);
+            return;
+        }
+        toast.success("Bienvenue sur l'app, votre compte a bien été créé.");
+        setIsLoading(false);
+        reset();
+        sendEmailVerificationProcedure();
+    }
+
     const handleCreateUserAuthentication = async ({
         email, 
         password, 
@@ -36,10 +50,16 @@ export const RegisterContainer = () => {
             toast.error(error.message);
             return
         }
-        // create user document
-        toast.success("Bienvenue sur l'app, votre compte a bien été créé.");
-        setIsLoading(false);
-        reset();
+
+        const userDocumentData = {
+            email: email,
+            how_did_hear: how_did_hear,
+            uid: data.uid,
+            creation_date: new Date(),
+        }
+
+        handleCreateUserDocument("users", data.uid, userDocumentData);
+        
     };
 
     const onSubmit: SubmitHandler<RegisterFormFilelsType> = async (formData) => {

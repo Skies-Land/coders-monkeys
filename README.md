@@ -1,7 +1,7 @@
 # 👨‍💻 CODERS MONKEYS
 Application web qui permet aux développeurs front-end de partager leurs projets entre eux, de s'inspirer et de s'entraider.
 
-Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CSS** et fait une première expérience avec **TypeScript**, **Next.js**.
+Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CSS** et fait une première expérience avec **TypeScript**, **Next.js** et **Firebase**.
 
 ## ▶️ Description
 **📄 Présentation**
@@ -34,7 +34,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Implémentation d'une side bar dynamique dans le commosant **`Layout`** pour la gestion de l'espace membre.
 - Implémentation de l'architecture **"module-container-views"** qui est un modèle de conception couramment utilisé dans le développement web.
 - Développement des composants **`HeroTopView`**, **`Featuredview`**, **`CodersMonkeysSlackView`**, **`CurrentCourseCtaView`**, **`HighlightListView`** et **`CallToActionView`** qui composent la landing page.
-- Développement et implémentation des composants d'authentification (connexion, inscription, récupération de mot de passe).
+- Développement et implémentation des composants d'authentification (*connexion / inscription / récupération de mot de passe*).
 - Ajout d'intéractivité avec nagivation facilité dans les pages d'authentification avec le composant **`breadcrumbs`** fil d'Ariane.
 - Installation et configuration de **[react-hook-form](https://react-hook-form.com/)** pour la création de formulaire avancé.
 
@@ -43,6 +43,11 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Mise en place de l'authentification avec **[Firebase](https://firebase.google.com/)**, gestion des erreurs optimisée via **[react-hook-form](https://react-hook-form.com/)**, isolation de la logique métier, création d'un système de notifications animées, et développement d'un custom hook pour gérer les valeurs booléennes.
 - Création de la navigation entre les formulaires (*connexion / inscription / récupération de mot de passe*) avec mise en place de la connexion et déconnexion des utilisateurs via **[Firebase](https://firebase.google.com/)**.
 - Implémentation de la fonctionnalité de récupération de mot de passe.
+- Initiation à **[Firestore](https://firebase.google.com/docs/firestore?hl=fr)** et configuration de la base de données NoSQL.
+- Création de collections et de documents Firestore pour stocker les données utilisateur.
+- Implémentation des **[opérations CRUD](https://medium.com/@ahmadrazawebexpert/how-to-perform-firebase-crud-operations-355de96bad2c)** sur les données Firestore.
+- Mise en place **[des règles de sécurité Firestore](https://firebase.google.com/docs/firestore/security/rules-structure?hl=fr)** pour protéger les données sensibles.
+- Configuration de **[l'envoi d'emails de confirmation d'adresse avec Firebase](https://firebase.google.com/docs/auth/web/email-link-auth?hl=fr)**.
 
 #
 
