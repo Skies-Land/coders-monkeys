@@ -10,7 +10,15 @@ import { Button } from "@/ui/design-system/button/button";
 import { Logo } from "@/ui/design-system/logo/logo";
 import { Typography } from "@/ui/design-system/typography/typography";
 
+// CONTEXT
+import { useAuth } from "@/context/AuthUserContext";
+
 export const Navigation = () => {
+    const { authUser, authUserIsLoading } = useAuth();
+
+    console.log('authUser', authUser);
+    console.log('authUserIsLoading', authUserIsLoading);
+
     return (
         <div className="border-b-2 border-gray-400">
             <Container className="flex items-center justify-between py-1.5 gap-7">
@@ -42,9 +50,9 @@ export const Navigation = () => {
                         className="flex items-center gap-7"
                     >
                         <ActiveLink href="/design-system">Design System</ActiveLink>
-                        <Link href="/projets">Projets</Link>
-                        <Link href="/formations">Formations</Link>
-                        <Link href="/contact">Contact</Link>
+                        <ActiveLink href="/projets">Projets</ActiveLink>
+                        <ActiveLink href="/formations">Formations</ActiveLink>
+                        <ActiveLink href="/contact">Contact</ActiveLink>
                     </Typography>
                     <div className="flex items-center gap-2">
                         <Button baseUrl="/connexion" size="small">Connexion</Button>

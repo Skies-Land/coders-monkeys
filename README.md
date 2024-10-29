@@ -48,6 +48,8 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Implémentation des **[opérations CRUD](https://medium.com/@ahmadrazawebexpert/how-to-perform-firebase-crud-operations-355de96bad2c)** sur les données Firestore.
 - Mise en place **[des règles de sécurité Firestore](https://firebase.google.com/docs/firestore/security/rules-structure?hl=fr)** pour protéger les données sensibles.
 - Configuration de **[l'envoi d'emails de confirmation d'adresse avec Firebase](https://firebase.google.com/docs/auth/web/email-link-auth?hl=fr)**.
+- Mise en place d'un système d'authentification utilisateur avec un custom hook pour gérer le statut de connexion et récupérer les informations depuis Firestore. 
+- Intégration d'un context provider pour diffuser les données d'authentification dans l'application, avec mises à jour **[en temps réel avec Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/listen?hl=fr)** sans rechargement de la page.
 
 #
 
