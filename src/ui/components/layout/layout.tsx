@@ -1,19 +1,26 @@
-// COMPONENTS
+// DEPENDENCIES
 import { ReactElement } from "react";
+
+// COMPONENTS
 import { Breadcrumbs } from "../breadcrumbs/breadcrumbs";
 import { Footer } from "../navigation/footer";
 import { Navigation } from "../navigation/navigation";
 import { Container } from "../container/container";
 import { UserAccountNavigation } from "../navigation/user-account-navigation";
+import { Session } from "../session/session";
+
+// TYPES
+import { SessionStatusTypes } from "@/types/session-status-types";
 
 // INTERFACES
 interface Props {
     children: React.ReactNode;
     isdisplayBreadcrumb?: boolean;
     withSidebar?: boolean;
+    sessionStatus?: SessionStatusTypes;
 }
 
-export const Layout = ({ children, isdisplayBreadcrumb=true , withSidebar}: Props) => {
+export const Layout = ({ children, isdisplayBreadcrumb=true , withSidebar, sessionStatus}: Props) => {
     
     let view: ReactElement = <></>
     if (withSidebar) {
@@ -33,11 +40,11 @@ export const Layout = ({ children, isdisplayBreadcrumb=true , withSidebar}: Prop
     }
     
     return (
-        <>
+        <Session sessionStatus={sessionStatus}>
             <Navigation />
             {isdisplayBreadcrumb && <Breadcrumbs />}
             {view}
             <Footer />
-        </>
+        </Session>
     )
 }

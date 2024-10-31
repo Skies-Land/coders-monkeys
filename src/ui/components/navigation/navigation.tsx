@@ -12,12 +12,18 @@ import { Typography } from "@/ui/design-system/typography/typography";
 
 // CONTEXT
 import { useAuth } from "@/context/AuthUserContext";
+import { AccountAvatarNavigationLink } from "./acount-avatar-link";
 
 export const Navigation = () => {
-    const { authUser, authUserIsLoading } = useAuth();
-
+    const { authUser } = useAuth();
     console.log('authUser', authUser);
-    console.log('authUserIsLoading', authUserIsLoading);
+
+    const authentificationSystem = (
+        <div className="flex items-center gap-2">
+            <Button baseUrl="/connexion" size="small">Connexion</Button>
+            <Button baseUrl="/connexion/inscription" size="small" variant="secondary" >Rejoindre</Button>
+        </div>
+    )
 
     return (
         <div className="border-b-2 border-gray-400">
@@ -54,10 +60,8 @@ export const Navigation = () => {
                         <ActiveLink href="/formations">Formations</ActiveLink>
                         <ActiveLink href="/contact">Contact</ActiveLink>
                     </Typography>
-                    <div className="flex items-center gap-2">
-                        <Button baseUrl="/connexion" size="small">Connexion</Button>
-                        <Button baseUrl="/connexion/inscription" size="small" variant="secondary" >Rejoindre</Button>
-                    </div>
+                    
+                    {!authUser ? authentificationSystem : <AccountAvatarNavigationLink />}
                 </div>
             </Container>
         </div>
