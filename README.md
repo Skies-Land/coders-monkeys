@@ -38,7 +38,8 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Ajout d'intéractivité avec nagivation facilité dans les pages d'authentification avec le composant **`breadcrumbs`** fil d'Ariane.
 - Installation et configuration de **[react-hook-form](https://react-hook-form.com/)** pour la création de formulaire avancé.
 - Mise en place d'une temporisation pour optimiser le rendu des composants et améliorer la performance de l'application. Contrôle du statut d'authentification des utilisateurs avec redirections et sécurité des routes en fonction des rôles avec le composant **`session`**.
-- Implémentation de la logique **d'onboarding** pour guider les utilisateurs vers une expérience personnalisée et fluide.
+- Implémentation d'un **onboarding** pour guider les utilisateurs vers une expérience personnalisée et fluide lors de la création de leur compte avec les composants **`onboarding-container`** et **`onboarding-view`**. 
+- Ajout de la logique de progression avec fonctionnalités *"next"*, *"prev"*, *"isFirstStep"* et *"isFinalStep"*. Génération dynamique des composants de **l'onboarding** à partir d'un array pour simplifier le code et la navigation. Développement d'un footer interactif pour faciliter la navigation.
 
 ###
 **💻 Firebase**
