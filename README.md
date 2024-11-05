@@ -3,7 +3,7 @@ Application web qui permet aux développeurs front-end de partager leurs projets
 
 Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CSS** et fait une première expérience avec **TypeScript**, **Next.js** et **Firebase**.
 
-## ▶️ Description
+## ▶️ DESCRIPTION
 **📄 Présentation**
 - Cours suivie pour la réalisation de ce projet **[Remote Monkey](https://youtube.com/playlist?list=PLtKaauZVThjAe3U3AQqa-C1fLwHR48aMM&si=EH_EwWJUuE1k5gSE)**.
 - Projet initialisé avec **[Next.js](https://nextjs.org/)**.
@@ -19,7 +19,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Création d'un composant de chargement (loading/spinner) animé, ajoutant un indicateur de chargement aux boutons pour offir une expérience utilisateur améliorée.
 - Création des composants réutilisable **`Logo`** en utilisant des SVG et **`Avatar`** avec le composant **next/image** pour l'intégration des images de profil utilisateur.
 - Typage des propriétés des composants avec **TypeScript** pour améliorer la maintenance et l'extensibilité.
-- Développement d'un design système pour les champs de formulaire avec composants réutilisables.
+- Développement d'un design système pour les champs de formulaire (*"input"*, *"textarea"*) avec composants réutilisables.
 
 ###
 **💻 Front-end**
@@ -39,7 +39,9 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Installation et configuration de **[react-hook-form](https://react-hook-form.com/)** pour la création de formulaire avancé.
 - Mise en place d'une temporisation pour optimiser le rendu des composants et améliorer la performance de l'application. Contrôle du statut d'authentification des utilisateurs avec redirections et sécurité des routes en fonction des rôles avec le composant **`session`**.
 - Implémentation d'un **onboarding** pour guider les utilisateurs vers une expérience personnalisée et fluide lors de la création de leur compte avec les composants **`onboarding-container`** et **`onboarding-view`**. 
-- Ajout de la logique de progression avec fonctionnalités *"next"*, *"prev"*, *"isFirstStep"* et *"isFinalStep"*. Génération dynamique des composants de **l'onboarding** à partir d'un array pour simplifier le code et la navigation. Développement d'un footer interactif pour faciliter la navigation.
+- Ajout de la logique de progression avec fonctionnalités (*"next"*, *"prev"*, *"isFirstStep"* et *"isFinalStep"*). Génération dynamique des composants de **l'onboarding** à partir d'un array pour simplifier le code et la navigation. Développement d'un footer interactif pour faciliter la navigation.
+- Création d'un composant d'onglet intelligent **`onboarding-tabs`** pour gérer l'affichage des étapes en fonction de l'étape actuelle. Ajout de formulaires réaticfs avec transition asynchone automatique vers l'étape suivante.
+
 
 ###
 **💻 Firebase**
@@ -53,6 +55,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Configuration de **[l'envoi d'emails de confirmation d'adresse avec Firebase](https://firebase.google.com/docs/auth/web/email-link-auth?hl=fr)**.
 - Mise en place d'un système d'authentification utilisateur avec un custom hook pour gérer le statut de connexion et récupérer les informations depuis Firestore. 
 - Intégration d'un context provider pour diffuser les données d'authentification dans l'application, avec mises à jour **[en temps réel avec Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/listen?hl=fr)** sans rechargement de la page.
+- Pour **l'onboarding**, synchronisation des données utilisateur entre **Firebase** et le token d'identification pour la mise à jour des champs de formulaire.
 
 #
 

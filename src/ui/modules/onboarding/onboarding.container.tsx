@@ -4,7 +4,7 @@ import { useState } from "react"
 // VIEWS
 import { OnboardingView } from "./onboarding.view"
 
-// COMPONENTS
+// COMPONENTS OF STEPS ONBOARDING
 import { WelcomeStep } from "./components/steps/welcome-step/welcome-step";
 import { ProfileStep } from "./components/steps/profile-step/profile-step";
 
@@ -26,6 +26,13 @@ export const OnboardingContainer = () => {
         {
             id: 2, 
             label: "Profile", 
+            component: { 
+                step: ProfileStep
+            },
+        },
+        {
+            id: 3, 
+            label: "Avatar", 
             component: { 
                 step: ProfileStep
             },

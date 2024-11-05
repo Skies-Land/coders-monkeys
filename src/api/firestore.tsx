@@ -4,7 +4,11 @@ import { db } from "@/config/firebase-config";
 import { FirebaseError } from "firebase/app";
 
 // Fonction pour créer un document dans Firestore
-export const firestoseCreateDocument = async (collectionName: string, documentID: string, data: object) => {
+export const firestoseCreateDocument = async (
+    collectionName: string, 
+    documentID: string, 
+    data: object
+) => {
     try {
         const documentRef = doc(db, collectionName, documentID);
 
@@ -23,7 +27,11 @@ export const firestoseCreateDocument = async (collectionName: string, documentID
 };
 
 // Fonction pour mettre à jour un document dans Firestore
-export const firestoseUpdateDocument = async (collectionName: string, documentID: string, data: object) => {
+export const firestoseUpdateDocument = async (
+    collectionName: string, 
+    documentID: string, 
+    data: object
+) => {
     try {
         const documentRef = doc(db, collectionName, documentID);
 

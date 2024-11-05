@@ -1,14 +1,13 @@
-// DEPENDENCIES
-import clsx from "clsx";
-
 // DESIGN SYSTEM
 import { Typography } from "../typography/typography";
 
-// INTERFACES
+// DEPENDENCIES
+import clsx from "clsx";
+
 interface Props {
     isLoading: boolean;
     placeholder: string;
-    type?: "text" | "email" | "password";
+    rows?: number;
     register: any;
     errors: any;
     errorMsg?: string;
@@ -18,10 +17,10 @@ interface Props {
     label?: string;
 }
 
-export const Input = ({ 
+export const Textarea = ({ 
     isLoading,
     placeholder,
-    type = "text",
+    rows = 5,
     register,
     errors,
     errorMsg = "Tu dois renseigner ce champ",
@@ -30,7 +29,6 @@ export const Input = ({
     isAutoCompleted = false,
     label,
 }: Props) => {
-
     return (
         <div className="space-y-2">
             {label && (
@@ -42,22 +40,22 @@ export const Input = ({
                     {label}
                 </Typography>
             )}
-            <input
-                type={type}
+            <textarea
+                rows={rows}
                 placeholder={placeholder}
                 className={clsx(
-                    isLoading && "cursor-not-allowed",
+                    isLoading ? "bg-gray-300 focus:ring-gray-300 cursor-not-allowed" : "bg-white",
                     errors[id] 
                         ? "placeholder-alert-danger text-alert-danger" 
                         : "placeholder-gray-600",
-                    "w-full p-4 font-light border border-gray-400 rounded focus:outline-none focus:ring-1 focus:ring-primary"
+                    "w-full p-4 font-light border rounded focus:outline-none focus:ring-1 focus:ring-primary border-gray-400"
                 )}
                 disabled={isLoading}
                 {...register(id, {
-                required: {
-                    value: required,
-                    message: errorMsg,
-                },
+                    required: {
+                        value: required,
+                        message: errorMsg,
+                    }
                 })}
                 autoComplete={isAutoCompleted ? "on" : "off"}
             />
@@ -67,5 +65,5 @@ export const Input = ({
                 </Typography>
             )}
         </div>
-    );
-};
+    )
+}
