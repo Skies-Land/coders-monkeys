@@ -12,4 +12,6 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 
 ###
 **🗄️ Back-end**
-- 
+- Initialisation de l'environnement back-end avec **[Firebase Functions](https://firebase.google.com/docs/functions?hl=fr)**.
+- Création d'un fonction de type global **`updateUser`** pour pouvoir mettre à jour les informations d'un utilisateur et déploiement de la première fonction Firebase.
+- Intégration de la fonction Firebase côté front-end pour enrichir l'expérience utilisateur.

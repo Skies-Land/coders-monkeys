@@ -23,6 +23,9 @@ import { useAuth } from "@/context/AuthUserContext";
 import { toast } from "react-toastify";
 import { useEffect } from "react";
 
+// API
+import { updateUserIdentificationData } from "@/api/authentication";
+
 export const ProfileStep = ({ 
     prev, 
     next, 
@@ -48,8 +51,6 @@ export const ProfileStep = ({
     } = useForm<OnboardingProfileFormFieldsType>();
 
     const { displayName, expertise, biography } = authUser.userDocument;
-
-    console.log("displayName", displayName);
 
     // Récupération des données de l'utilisateur pour les afficher dans le formulaire
     useEffect(() => {
@@ -93,6 +94,24 @@ export const ProfileStep = ({
             expertise !== formData.expertise ||
             biography !== formData.biography
         ) {
+            if (
+                displayName !== formData.displayName || authUser.displayName !== formData.displayName
+            ) {
+                const data = {
+                    displayName: formData.displayName,
+                };
+                
+                const { error } = await updateUserIdentificationData(
+                    authUser.uid,
+                    data
+                );
+                if (error) {
+                    setIsLoading(false);
+                    toast.error(error.message);
+                    return;
+                }
+            }
+
             handleUpdateUserDocument(formData); 
         }
         setIsLoading(false);

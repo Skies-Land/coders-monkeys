@@ -112,3 +112,30 @@ export const sendEmailVerificationProcedure = async () => {
         }
     }
 };
+
+// Fonction pour >METTRE À JOUR LES DONNÉES D'IDENTIFICATION< de l'utilisateur
+export const updateUserIdentificationData = async (uid: string, data: any) => {
+    const result = await fetch ("https://updateuser-kiadtv5era-uc.a.run.app", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            uid: uid,
+            data: data,
+        }),
+    })
+
+    if (!result.ok) {
+        const errorResponse = await result.json();
+        const firebaseError = errorResponse as FirebaseError;
+        // format error
+        return({
+            error: {
+                code: firebaseError.code,
+                message: firebaseError.message,
+            },
+        });
+    }
+    return { data: true }
+};
