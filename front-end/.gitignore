@@ -37,3 +37,4 @@ next-env.d.ts
 
 # firebase config
 firebase-config.js
+cors.json

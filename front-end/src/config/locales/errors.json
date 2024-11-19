@@ -1,0 +1,144 @@
+{
+	"an_unknown_error_has_occurred": "Une erreur inconnue est survenue veuillez réessayer, contactez-nous si le problème persiste",
+
+	"firestore": {
+		"permission-denied": "Permissions manquantes ou insuffisantes."
+	},
+	"createUserWithEmailAndPassword": {
+		"auth/email-already-in-use": "Cette adresse e-mail est déja utilisé.",
+		"auth/invalid-email": "Cette adresse e-mail ne semble pas valide.",
+		"auth/operation-not-allowed": "Ce mode d'enregistrement n'est pas actif.",
+		"auth/weak-password": "Votre mot de passe n'est pas assez fort, il doit comporter au minimum 6 caractères."
+	},
+	"signInWithEmailAndPassword": {
+		"auth/invalid-email": "Cette adresse e-mail ne semble pas valide.",
+		"auth/user-disabled": "Connexion impossible, votre compte a été désactivé.",
+		"auth/user-not-found": "Connexion impossible, cette adresse e-mail n'éxiste pas.",
+		"auth/wrong-password": "Connexion impossible, votre mot de passe et votre e-mail ne correspondent pas."
+	},
+	"signOut": {
+		"auth/invalid-user-token": "Une erreur critique est survenue code: signOut auth/invalid-user-token.",
+		"auth/user-token-expired": "Une erreur critique est survenue code: signOut auth/user-token-expired",
+		"auth/null-user": "Une erreur critique est survenue code: signOut auth/null-user",
+		"auth/tenant-id-mismatch": "Une erreur critique est survenue code: signOut auth/tenant-id-mismatch"
+	},
+	"verifyPasswordResetCode": {
+		"auth/expired-action-code": "Impossible de continuer, cette procédure de récupération de mot de passe a expiré.",
+		"auth/invalid-action-code": "Impossible de continuer, cette procédure de récupération de mot de passe n'est plus valide.",
+		"auth/user-disabled": "Impossible de continuer, votre compte a été désactivé.",
+		"auth/user-not-found": "Impossible de continuer, votre compte a été supprimé."
+	},
+	"confirmPasswordReset": {
+		"auth/expired-action-code": "Impossible de continuer, cette procédure de récupération de mot de passe a expiré.",
+		"auth/invalid-action-code": "Impossible de continuer, cette procédure de récupération de mot de passe n'est plus valide.",
+		"auth/user-disabled": "Impossible de continuer, votre compte a été désactivé.",
+		"auth/user-not-found": "Impossible de continuer, votre compte a été supprimé.",
+		"auth/weak-password": "Votre mot de passe n'est pas assez fort, il doit comporter au minimum 6 caractères."
+	},
+
+	"updateEmail": {
+		"auth/invalid-email": "Cette adresse e-mail ne semble pas valide.",
+		"auth/email-already-in-use": "Cette adresse e-mail est déja utilisé.",
+		"auth/requires-recent-login": "Procédure interdite, vous devez avoir été connecté récemment pour changer votre e-mail."
+	},
+
+	"reauthenticateWithCredential": {
+		"auth/user-mismatch": "Une erreur critique est survenue impossible de continuer, contacter un administrateur ou recharger l'application. code : reauthenticateWithCredential auth/user-mismatch",
+		"auth/user-not-found": "Une erreur critique est survenue impossible de continuer, contacter un administrateur ou recharger l'application. code : reauthenticateWithCredential auth/user-not-found",
+		"auth/invalid-credential": "Une erreur critique est survenue impossible de continuer, contacter un administrateur ou recharger l'application. code : reauthenticateWithCredential auth/invalid-credential",
+		"auth/invalid-email": "Votre adresse e-mail semble invalide.",
+		"auth/wrong-password": "Votre mot de passe ne correspond pas.",
+		"auth/invalid-verification-code": "Une erreur critique est survenue impossible de continuer, contacter un administrateur ou recharger l'application. code : reauthenticateWithCredential auth/invalid-verification-code",
+		"auth/invalid-verification-id": "Une erreur critique est survenue impossible de continuer, contacter un administrateur ou recharger l'application. code : reauthenticateWithCredential auth/invalid-verification-id"
+	},
+
+	"checkActionCode": {
+		"auth/expired-action-code": "Impossible de continuer, cette procédure de restauration de l'adresse e-mail a expiré.",
+		"auth/invalid-action-code": "Impossible de continuer, cette procédure de restauration de l'adresse e-mail n'est plus valide.",
+		"auth/user-disabled": "Impossible de continuer, votre compte a été désactivé.",
+		"auth/user-not-found": "Impossible de continuer, votre compte a été supprimé."
+	},
+
+	"applyActionCode": {
+		"auth/expired-action-code": "Impossible de continuer, cette procédure de restauration de l'adresse e-mail a expiré.",
+		"auth/invalid-action-code": "Impossible de continuer, cette procédure de restauration de l'adresse e-mail n'est plus valide.",
+		"auth/user-disabled": "Impossible de continuer, votre compte a été désactivé.",
+		"auth/user-not-found": "Impossible de continuer, votre compte a été supprimé."
+	},
+
+	"deleteUser": {
+		"auth/requires-recent-login": "Une erreur s'est produite veuillez recommencer, ou vous connecter avant de retenter cette opération."
+	},
+
+	"sendPasswordResetEmail": {
+		"auth/invalid-email": "Cette adresse e-mail ne semble pas valide.",
+		"auth/user-not-found": "Récupération du mot de passe impossible, cette adresse e-mail n'existe pas."
+	},
+
+	"updatePassword": {
+		"auth/weak-password": "Votre mot de passe n'est pas assez fort, il doit comporter au minimum 6 caractères.",
+		"auth/requires-recent-login": "Une erreur s'est produite veuillez recommencer, ou vous connecter avant de retenter cette opération."
+	},
+
+	"firestoreGetDocumentList": {
+		"permission-denied": "Permissions manquantes ou insuffisantes.",
+		"failed-precondition": "Impossible d'effectuer cette recherche, cet index doit être établi par notre équipe de développement, désolé pour la gêne occasionné."
+	},
+
+	"admin_authentication": {
+		"auth/claims-too-large": "La charge utile des revendications fournie à setCustomUserClaims() dépasse la taille maximale autorisée de 1 000 octets.",
+		"auth/email-already-exists": "L'adresse e-mail fournie est déjà utilisée par un utilisateur existant. Chaque utilisateur doit avoir un email unique.",
+		"auth/id-token-expired": "Le jeton d'identification Firebase fourni a expiré.",
+		"auth/id-token-revoked": "Le jeton d'identification Firebase a été révoqué.",
+		"auth/insufficient-permission": "Les informations d'identification utilisées pour initialiser le SDK Admin ne disposent pas d'une autorisation suffisante pour accéder à la ressource d'authentification demandée. Reportez-vous à Configurer un projet Firebase pour obtenir de la documentation sur la façon de générer un identifiant avec les autorisations appropriées et de l'utiliser pour authentifier les SDK Admin.",
+		"auth/internal-error": "Le serveur d'authentification a rencontré une erreur inattendue lors de la tentative de traitement de la demande. Le message d'erreur doit contenir la réponse du serveur d'authentification contenant des informations supplémentaires. Si l'erreur persiste, veuillez signaler le problème à notre canal d'assistance Bug Report .",
+		"auth/invalid-argument": "Un argument non valide a été fourni à une méthode d'authentification. Le message d'erreur doit contenir des informations supplémentaires.",
+		"auth/invalid-claims": "Les attributs de revendication personnalisés fournis à setCustomUserClaims() ne sont pas valides.",
+		"auth/invalid-continue-uri": "L'URL de continuation doit être une chaîne d'URL valide.",
+		"auth/invalid-creation-time": "L'heure de création doit être une chaîne de date UTC valide.",
+		"auth/invalid-credential": "Les informations d'identification utilisées pour authentifier les SDK d'administration ne peuvent pas être utilisées pour effectuer l'action souhaitée. Certaines méthodes d'authentification telles que createCustomToken() et verifyIdToken() nécessitent que le SDK soit initialisé avec des informations d'identification de certificat, par opposition à un jeton d'actualisation ou des informations d'identification par défaut de l'application. Voir Initialiser le SDK pour obtenir de la documentation sur la façon d'authentifier les SDK d'administration avec des informations d'identification de certificat.",
+		"auth/invalid-disabled-field": "La valeur fournie pour la propriété de l'utilisateur disabled n'est pas valide. Ce doit être un booléen.",
+		"auth/invalid-display-name": "La valeur fournie pour la propriété utilisateur displayName n'est pas valide. Il doit s'agir d'une chaîne non vide.",
+		"auth/invalid-dynamic-link-domain": "Le domaine de lien dynamique fourni n'est pas configuré ou autorisé pour le projet en cours.",
+		"auth/invalid-email": "La valeur fournie pour la propriété d'utilisateur de email n'est pas valide. Il doit s'agir d'une adresse e-mail de chaîne.",
+		"auth/invalid-email-verified": "La valeur fournie pour la propriété utilisateur emailVerified n'est pas valide. Ce doit être un booléen.",
+		"auth/invalid-hash-algorithm": "L'algorithme de hachage doit correspondre à l'une des chaînes de la liste des algorithmes pris en charge.",
+		"auth/invalid-hash-block-size": "La taille du bloc de hachage doit être un nombre valide.",
+		"auth/invalid-hash-derived-key-length": "La longueur de la clé dérivée du hachage doit être un nombre valide.",
+		"auth/invalid-hash-key": "La clé de hachage doit être un tampon d'octets valide.",
+		"auth/invalid-hash-memory-cost": "Le coût de la mémoire de hachage doit être un nombre valide.",
+		"auth/invalid-hash-parallelization": "La parallélisation de hachage doit être un nombre valide.",
+		"auth/invalid-hash-rounds": "Les tours de hachage doivent être un nombre valide.",
+		"auth/invalid-hash-salt-separator": "Le champ séparateur de sel de l'algorithme de hachage doit être un tampon d'octets valide.",
+		"auth/invalid-id-token": "Le jeton d'identification fourni n'est pas un jeton d'identification Firebase valide.",
+		"auth/invalid-last-sign-in-time": "L'heure de la dernière connexion doit être une chaîne de date UTC valide.",
+		"auth/invalid-page-token": "Le jeton de page suivante fourni dans listUsers() n'est pas valide. Il doit s'agir d'une chaîne non vide valide.",
+		"auth/invalid-password": "La valeur fournie pour la propriété utilisateur du password de passe n'est pas valide. Il doit s'agir d'une chaîne d'au moins six caractères.",
+		"auth/invalid-password-hash": "Le hachage du mot de passe doit être un tampon d'octets valide.",
+		"auth/invalid-password-salt": "Le mot de passe salt doit être un tampon d'octets valide",
+		"auth/invalid-phone-number": "La valeur fournie pour le numéro de phoneNumber n'est pas valide. Il doit s'agir d'une chaîne d'identifiant non vide conforme à la norme E.164.",
+		"auth/invalid-photo-url": "La valeur fournie pour la propriété utilisateur photoURL n'est pas valide. Il doit s'agir d'une URL de chaîne.",
+		"auth/invalid-provider-data": "Le providerData doit être un tableau valide d'objets UserInfo.",
+		"auth/invalid-provider-id": "Le providerId doit être une chaîne d'identifiant de fournisseur prise en charge valide.",
+		"auth/invalid-oauth-responsetype": "Un seul type de responseType OAuth doit être défini sur true.",
+		"auth/invalid-session-cookie-duration": "La durée du cookie de session doit être un nombre valide en millisecondes entre 5 minutes et 2 semaines.",
+		"auth/invalid-uid": "L' uid fourni doit être une chaîne non vide d'au plus 128 caractères.",
+		"auth/invalid-user-import": "L'enregistrement d'utilisateur à importer n'est pas valide.",
+		"auth/maximum-user-count-exceeded": "Le nombre maximum d'utilisateurs autorisés à importer a été dépassé.",
+		"auth/missing-android-pkg-name": "Un nom de package Android doit être fourni si l'application Android doit être installée.",
+		"auth/missing-continue-uri": "Une URL de continuation valide doit être fournie dans la demande.",
+		"auth/missing-hash-algorithm": "L'importation d'utilisateurs avec des hachages de mot de passe nécessite que l'algorithme de hachage et ses paramètres soient fournis.",
+		"auth/missing-ios-bundle-id": "Il manque un ID de bundle à la demande.",
+		"auth/missing-uid": "Un identifiant uid est requis pour l'opération en cours.",
+		"auth/missing-oauth-client-secret": "Le secret du client de configuration OAuth est requis pour activer le flux de code OIDC.",
+		"auth/operation-not-allowed": "Le fournisseur de connexion fourni est désactivé pour votre projet Firebase. Activez -le dans la section Méthode de connexion de la console Firebase.",
+		"auth/phone-number-already-exists": "Le phoneNumber fourni est déjà utilisé par un utilisateur existant. Chaque utilisateur doit avoir un phoneNumber unique.",
+		"auth/project-not-found": "Aucun projet Firebase n'a été trouvé pour les informations d'identification utilisées pour initialiser les SDK d'administration. Reportez-vous à Configurer un projet Firebase pour obtenir de la documentation sur la façon de générer un identifiant pour votre projet et de l'utiliser pour authentifier les SDK Admin.",
+		"auth/reserved-claims": "Une ou plusieurs revendications utilisateur personnalisées fournies à setCustomUserClaims() sont réservées. Par exemple, les revendications spécifiques à OIDC telles que (sub, iat, iss, exp, aud, auth_time, etc.) ne doivent pas être utilisées comme clés pour les revendications personnalisées.",
+		"auth/session-cookie-expired": "Le cookie de session Firebase fourni a expiré.",
+		"auth/session-cookie-revoked": "Le cookie de session Firebase a été révoqué.",
+		"auth/uid-already-exists": "L' uid fourni est déjà utilisé par un utilisateur existant. Chaque utilisateur doit avoir un uid unique.",
+		"auth/unauthorized-continue-uri": "Le domaine de l'URL de continuation n'est pas sur la liste blanche. Ajoutez le domaine à la liste blanche dans la console Firebase.",
+		"auth/user-not-found": "Aucun enregistrement d'utilisateur existant ne correspond à l'identifiant fourni."
+	}
+}

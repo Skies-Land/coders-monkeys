@@ -2,7 +2,7 @@
 import { BaseComponentProps } from "@/types/onboarding-steps-list";
 import { OnboardingProfileFormFieldsType } from "@/types/forms";
 
-// COMPONENTS
+// COMPONENTS / DESIGN SYSTEM
 import { OnboardingFooter } from "../../footer/onboarding-footer";
 import { Container } from "@/ui/components/container/container";
 import { OnboardingTabs } from "../../tabs/onboarding-tabs";
@@ -34,7 +34,7 @@ export const ProfileStep = ({
     stepLists, 
     getCurrentStep 
 }: BaseComponentProps) => {
-    
+    // Récupération de l'utilisateur connecté
     const { authUser } = useAuth();
 
     // Outils pour gérer le chargement
@@ -165,5 +165,5 @@ export const ProfileStep = ({
                 isLoading={isLoading}
             />
         </div>
-    )
+    );
 };

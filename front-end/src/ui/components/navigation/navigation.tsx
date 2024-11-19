@@ -16,7 +16,6 @@ import { AccountAvatarNavigationLink } from "./acount-avatar-link";
 
 export const Navigation = () => {
     const { authUser } = useAuth();
-    console.log('authUser', authUser);
 
     const authentificationSystem = (
         <div className="flex items-center gap-2">

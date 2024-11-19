@@ -41,6 +41,7 @@ export const WelcomeStep = ({ next, isFirstStep, isFinalStep, stepLists, getCurr
                                 alt="Illustration de fusée"
                                 width={811}
                                 height={596}
+                                priority
                             />
                         </div>
                     </div>

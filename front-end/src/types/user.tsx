@@ -19,4 +19,5 @@ export interface UserDocument {
     displayName: string;
     expertise: string;
     biography: string;
+    photoURL: string | null;
 }
