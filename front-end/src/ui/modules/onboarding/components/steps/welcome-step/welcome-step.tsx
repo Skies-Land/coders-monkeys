@@ -10,7 +10,9 @@ import { Container } from "@/ui/components/container/container";
 import Image from "next/image";
 import { OnboardingTabs } from "../../tabs/onboarding-tabs";
 
-export const WelcomeStep = ({ next, isFirstStep, isFinalStep, stepLists, getCurrentStep }: BaseComponentProps) => {
+export const WelcomeStep = ({ 
+    next, isFirstStep, isFinalStep, stepLists, getCurrentStep 
+}: BaseComponentProps) => {
     return (
         <div className="relative h-screen pb-[91px]">
             <div className="h-full overflow-auto">

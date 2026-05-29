@@ -15,6 +15,16 @@ export default function useFirebaseAuth() {
     const [authUser, setAuthUser] = useState<UserInterface | null>(null)
     const [authUserIsLoading, setAuthUserIsLoading] = useState<boolean>(true)
 
+    // Fonction pour recharger de les informations primaire de l'utilisateur
+    // (re-forcer la capture des infos users)
+    const reloadAuthUserData = () => {
+        if (auth.currentUser) {
+            auth.currentUser.reload().then(() => {
+                authStateChanged(auth.currentUser);
+            })
+        }
+    }
+
     // Formate l'utilisateur Firebase pour ne conserver que les informations nécessaires
     const formatAuthUser = (user: UserInterface) => ({
         uid: user.uid,
@@ -66,5 +76,6 @@ export default function useFirebaseAuth() {
     return {
         authUser,
         authUserIsLoading,
+        reloadAuthUserData,
     };
 }

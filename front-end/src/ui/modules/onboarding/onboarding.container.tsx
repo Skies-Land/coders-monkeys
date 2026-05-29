@@ -8,6 +8,7 @@ import { OnboardingView } from "./onboarding.view"
 import { WelcomeStep } from "./components/steps/welcome-step/welcome-step";
 import { ProfileStep } from "./components/steps/profile-step/profile-step";
 import { AvatarStep } from "./components/steps/avatar-step/avatar-step";
+import { FinalStep } from "./components/steps/final-step/final-step";
 
 // TYPE
 import { onboardingStepsListInterface } from "@/types/onboarding-steps-list";
@@ -24,18 +25,18 @@ export const OnboardingContainer = () => {
         },
         {
             id: 2, 
-            label: "Profile", 
+            label: "Profil", 
             component: { step: ProfileStep },
         },
         {
             id: 3, 
-            label: "Avatar", 
+            label: "Photo", 
             component: { step: AvatarStep },
         },
         {
             id: 4, 
-            label: "Last Step", 
-            component: { step: WelcomeStep },
+            label: "Dernière étape", 
+            component: { step: FinalStep },
         },
     ];
 

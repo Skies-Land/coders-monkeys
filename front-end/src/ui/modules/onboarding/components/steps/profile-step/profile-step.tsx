@@ -35,7 +35,7 @@ export const ProfileStep = ({
     getCurrentStep 
 }: BaseComponentProps) => {
     // Récupération de l'utilisateur connecté
-    const { authUser } = useAuth();
+    const { authUser, reloadAuthUserData } = useAuth();
 
     // Outils pour gérer le chargement
     const { value: isLoading, setValue: setIsLoading } = useToggle();

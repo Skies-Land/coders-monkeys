@@ -43,7 +43,7 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Création d'un composant d'onglet intelligent **`onboarding-tabs`** pour gérer l'affichage des étapes en fonction de l'étape actuelle. Ajout de formulaires réaticfs avec transition asynchone automatique vers l'étape suivante.
 - Développement d'un composant d'upload d'image **`upload-avatar`** avec prévisualisation. Mise à jour des informations utilisateur avec l'URL de l'image téléchargée.
 - Implémentation du suivi de progression du chargement avec le composant animé **`spinner`** et barre de progression visible.
-
+- Installation de la dépendance **[react-canvas-confetti](https://www.npmjs.com/package/react-canvas-confetti)**. Implémentation dans le composant **`final-step`** et configuration de l'animation de projection de confettie pour confirmer avec succès la création de compte dans la dernière étape du onbording.
 
 ###
 **🚀 Firebase**
