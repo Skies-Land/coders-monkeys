@@ -14,7 +14,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { useToggle } from "@/hooks/use-toggle";
 
 // API
-import { firestoseUpdateDocument } from "@/api/firestore";
+import { firestoreUpdateDocument } from "@/api/firestore";
 
 // CONTEXT
 import { useAuth } from "@/context/AuthUserContext";
@@ -68,7 +68,7 @@ export const ProfileStep = ({
     const handleUpdateUserDocument = async (
         formData: OnboardingProfileFormFieldsType
     ) => {
-        const { error } = await firestoseUpdateDocument(
+        const { error } = await firestoreUpdateDocument(
             "users",
             authUser.uid,
             formData

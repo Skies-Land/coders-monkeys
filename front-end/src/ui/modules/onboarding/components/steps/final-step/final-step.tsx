@@ -17,7 +17,7 @@ import ReactCanvasConfetti from "react-canvas-confetti";
 import { toast } from "react-toastify";
 
 // API
-import { firestoseUpdateDocument } from "@/api/firestore";
+import { firestoreUpdateDocument } from "@/api/firestore";
 
 export const FinalStep = ({ isFinalStep }: BaseComponentProps) => {
     const { authUser, reloadAuthUserData } = useAuth();
@@ -81,7 +81,7 @@ export const FinalStep = ({ isFinalStep }: BaseComponentProps) => {
         const data = {
             onboardingIsCompleted: true,
         };
-        const { error } = await firestoseUpdateDocument(
+        const { error } = await firestoreUpdateDocument(
             "users", 
             authUser.uid,
             data

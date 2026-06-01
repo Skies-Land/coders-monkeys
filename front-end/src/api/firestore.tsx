@@ -27,7 +27,7 @@ export const firestoseCreateDocument = async (
 };
 
 // Fonction pour mettre à jour un document dans Firestore
-export const firestoseUpdateDocument = async (
+export const firestoreUpdateDocument = async (
     collectionName: string, 
     documentID: string, 
     data: object

@@ -20,7 +20,7 @@ import { toast } from "react-toastify";
 
 // API
 import { updateUserIdentificationData } from "@/api/authentication";
-import { firestoseUpdateDocument } from "@/api/firestore";
+import { firestoreUpdateDocument } from "@/api/firestore";
 
 // FIREBASE
 import { getDownloadURL, ref, StorageReference, uploadBytesResumable, UploadTask } from "firebase/storage";
@@ -75,7 +75,7 @@ export const AvatarStep = ({
 
         await updateUserIdentificationData(authUser.uid, body);
 
-        const { error } = await firestoseUpdateDocument(
+        const { error } = await firestoreUpdateDocument(
             "users",
             authUser.uid,
             body
@@ -122,7 +122,7 @@ export const AvatarStep = ({
                     );
                 }
             );
-            // Si l'image n'a pas été sélectionnée, l'utilisateur peux passer à l'étape suivante
+            // Si l'image n'a pas été sélectionnée, l'utilisateur peut passer à l'étape suivante
         } else {
             next();
         }

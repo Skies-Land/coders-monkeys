@@ -13,7 +13,7 @@ import Link from "next/link";
 // Définition des propriétés acceptées par le composant Button
 interface Props {
     size?: "small" | "medium" | "large";
-    variant?: "accent" | "secondary" | "outline" | "disable" | "ico" | "sucess" | "danger";
+    variant?: "accent" | "secondary" | "outline" | "disable" | "ico" | "sucess" | "danger" | "black";
     icon?: IconProps;
     iconTheme?: "accent" | "secondary" | "gray";
     iconPosition?: "left" | "right";
@@ -66,6 +66,9 @@ export const Button = ({
             break;
         case "danger":
             variantStyles = "bg-alert-danger hover:bg-alert-danger/75 text-white rounded";
+            break;
+        case "black":
+            variantStyles = "bg-gray-800 hover:bg-gray-700 text-white rounded";
             break;
         case "ico":
             if (iconTheme === "accent") {  // Style par défaut

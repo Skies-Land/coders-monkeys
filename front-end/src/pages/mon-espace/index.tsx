@@ -3,7 +3,7 @@ import { Layout } from "@/ui/components/layout/layout";
 import { Seo } from "@/ui/components/seo/seo";
 
 // MODULES
-import { UserAccountContainer } from "@/ui/modules/user-profile/user-account/user-account.container";
+import { ProfileContainer } from "@/ui/modules/user-profile/profile/profile.container";
 
 //LIB
 import { REGISTERED } from "@/lib/sessions-status";
@@ -16,7 +16,7 @@ export default function UserAccount() {
                 description="Dashboard de l'utilisateur sur Coders Monkey" 
             />
             <Layout withSidebar sessionStatus={REGISTERED}>
-                <UserAccountContainer />
+                <ProfileContainer />
             </Layout>
         </>
     );

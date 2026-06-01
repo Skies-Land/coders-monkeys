@@ -5,7 +5,7 @@ import { Typography } from "../typography/typography";
 import clsx from "clsx";
 
 interface Props {
-    isLoading: boolean;
+    isLoading?: boolean;
     placeholder: string;
     rows?: number;
     register: any;

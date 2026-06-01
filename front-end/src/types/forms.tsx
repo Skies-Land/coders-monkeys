@@ -31,3 +31,12 @@ export interface OnboardingProfileFormFieldsType {
     expertise: string;
     biography: string;
 }
+
+// Structure des champs du formulaire pour l'espace utilisateur
+export interface UserProfileFormFieldsType {
+    displayName: string;
+    expertise: string;
+    biography: string;
+    github: string;
+    linkedin: string;
+}
