@@ -9,5 +9,3 @@ Avec ce projet, je me suis d'avantage familiariser avec **React**, **Tailwind CS
 - Projet initialisé avec **[Next.js](https://nextjs.org/)**.
 - Développé avec **[React](https://fr.react.dev/)**, **[TypeScript](https://www.typescriptlang.org/)** & **[Tailwind CSS](https://tailwindcss.com/)**.
 - Projet déployer sur **[Firebase](https://firebase.google.com/)**.
-
-## 🔎 Accès au projet - ...
